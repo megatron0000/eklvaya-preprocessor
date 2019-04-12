@@ -1,0 +1,1940 @@
+['CFI_entries', 'EH_CFI_entries', '__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_abbrevtable_cache', '_is_supported_version', '_parse_CU_at_offset', '_parse_CUs_iter', '_parse_line_program_at_offset', 'config', 'debug_abbrev_sec', 'debug_aranges_sec', 'debug_frame_sec', 'debug_info_sec', 'debug_line_sec', 'debug_loc_sec', 'debug_ranges_sec', 'debug_str_sec', 'eh_frame_sec', 'get_abbrev_table', 'get_aranges', 'get_string_from_table', 'has_CFI', 'has_EH_CFI', 'has_debug_info', 'iter_CUs', 'line_program_for_CU', 'location_lists', 'range_lists', 'structs']
+True
+--------------
+#1 CU ------------------------------
+## DIE -----------------------
+DIE DW_TAG_compile_unit, size=34, has_children=True
+    |DW_AT_producer    :  AttributeValue(name='DW_AT_producer', form='DW_FORM_strp', value='GNU C11 6.3.0 -mtune=generic -march=x86-64 -gdwarf', raw_value=277, offset=12)
+    |DW_AT_language    :  AttributeValue(name='DW_AT_language', form='DW_FORM_data1', value=12, raw_value=12, offset=16)
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='program.1.1.c', raw_value=707, offset=17)
+    |DW_AT_comp_dir    :  AttributeValue(name='DW_AT_comp_dir', form='DW_FORM_strp', value='/home/vitor/ITA/ce248/dwarf-tests', raw_value=369, offset=21)
+    |DW_AT_low_pc      :  AttributeValue(name='DW_AT_low_pc', form='DW_FORM_addr', value=4195830, raw_value=4195830, offset=25)
+    |DW_AT_high_pc     :  AttributeValue(name='DW_AT_high_pc', form='DW_FORM_data8', value=158, raw_value=158, offset=33)
+    |DW_AT_stmt_list   :  AttributeValue(name='DW_AT_stmt_list', form='DW_FORM_sec_offset', value=0, raw_value=0, offset=41)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_compile_unit
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_producer', AttributeValue(name='DW_AT_producer', form='DW_FORM_strp', value='GNU C11 6.3.0 -mtune=generic -march=x86-64 -gdwarf', raw_value=277, offset=12)), ('DW_AT_language', AttributeValue(name='DW_AT_language', form='DW_FORM_data1', value=12, raw_value=12, offset=16)), ('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='program.1.1.c', raw_value=707, offset=17)), ('DW_AT_comp_dir', AttributeValue(name='DW_AT_comp_dir', form='DW_FORM_strp', value='/home/vitor/ITA/ce248/dwarf-tests', raw_value=369, offset=21)), ('DW_AT_low_pc', AttributeValue(name='DW_AT_low_pc', form='DW_FORM_addr', value=4195830, raw_value=4195830, offset=25)), ('DW_AT_high_pc', AttributeValue(name='DW_AT_high_pc', form='DW_FORM_data8', value=158, raw_value=158, offset=33)), ('DW_AT_stmt_list', AttributeValue(name='DW_AT_stmt_list', form='DW_FORM_sec_offset', value=0, raw_value=0, offset=41))])
+
+
+## DIE -----------------------
+DIE DW_TAG_typedef, size=11, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='size_t', raw_value=62, offset=46)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=2, raw_value=2, offset=50)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=216, raw_value=216, offset=51)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=56, raw_value=56, offset=52)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_typedef
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='size_t', raw_value=62, offset=46)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=2, raw_value=2, offset=50)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=216, raw_value=216, offset=51)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=56, raw_value=56, offset=52))])
+
+
+## DIE -----------------------
+DIE DW_TAG_base_type, size=7, has_children=False
+    |DW_AT_byte_size   :  AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=57)
+    |DW_AT_encoding    :  AttributeValue(name='DW_AT_encoding', form='DW_FORM_data1', value=7, raw_value=7, offset=58)
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='long unsigned int', raw_value=526, offset=59)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_base_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_byte_size', AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=57)), ('DW_AT_encoding', AttributeValue(name='DW_AT_encoding', form='DW_FORM_data1', value=7, raw_value=7, offset=58)), ('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='long unsigned int', raw_value=526, offset=59))])
+
+
+## DIE -----------------------
+DIE DW_TAG_base_type, size=7, has_children=False
+    |DW_AT_byte_size   :  AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=1, raw_value=1, offset=64)
+    |DW_AT_encoding    :  AttributeValue(name='DW_AT_encoding', form='DW_FORM_data1', value=8, raw_value=8, offset=65)
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='unsigned char', raw_value=263, offset=66)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_base_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_byte_size', AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=1, raw_value=1, offset=64)), ('DW_AT_encoding', AttributeValue(name='DW_AT_encoding', form='DW_FORM_data1', value=8, raw_value=8, offset=65)), ('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='unsigned char', raw_value=263, offset=66))])
+
+
+## DIE -----------------------
+DIE DW_TAG_base_type, size=7, has_children=False
+    |DW_AT_byte_size   :  AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=2, raw_value=2, offset=71)
+    |DW_AT_encoding    :  AttributeValue(name='DW_AT_encoding', form='DW_FORM_data1', value=7, raw_value=7, offset=72)
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='short unsigned int', raw_value=451, offset=73)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_base_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_byte_size', AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=2, raw_value=2, offset=71)), ('DW_AT_encoding', AttributeValue(name='DW_AT_encoding', form='DW_FORM_data1', value=7, raw_value=7, offset=72)), ('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='short unsigned int', raw_value=451, offset=73))])
+
+
+## DIE -----------------------
+DIE DW_TAG_base_type, size=7, has_children=False
+    |DW_AT_byte_size   :  AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=4, raw_value=4, offset=78)
+    |DW_AT_encoding    :  AttributeValue(name='DW_AT_encoding', form='DW_FORM_data1', value=7, raw_value=7, offset=79)
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='unsigned int', raw_value=531, offset=80)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_base_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_byte_size', AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=4, raw_value=4, offset=78)), ('DW_AT_encoding', AttributeValue(name='DW_AT_encoding', form='DW_FORM_data1', value=7, raw_value=7, offset=79)), ('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='unsigned int', raw_value=531, offset=80))])
+
+
+## DIE -----------------------
+DIE DW_TAG_base_type, size=7, has_children=False
+    |DW_AT_byte_size   :  AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=1, raw_value=1, offset=85)
+    |DW_AT_encoding    :  AttributeValue(name='DW_AT_encoding', form='DW_FORM_data1', value=6, raw_value=6, offset=86)
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='signed char', raw_value=265, offset=87)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_base_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_byte_size', AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=1, raw_value=1, offset=85)), ('DW_AT_encoding', AttributeValue(name='DW_AT_encoding', form='DW_FORM_data1', value=6, raw_value=6, offset=86)), ('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='signed char', raw_value=265, offset=87))])
+
+
+## DIE -----------------------
+DIE DW_TAG_base_type, size=7, has_children=False
+    |DW_AT_byte_size   :  AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=2, raw_value=2, offset=92)
+    |DW_AT_encoding    :  AttributeValue(name='DW_AT_encoding', form='DW_FORM_data1', value=5, raw_value=5, offset=93)
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='short int', raw_value=52, offset=94)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_base_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_byte_size', AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=2, raw_value=2, offset=92)), ('DW_AT_encoding', AttributeValue(name='DW_AT_encoding', form='DW_FORM_data1', value=5, raw_value=5, offset=93)), ('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='short int', raw_value=52, offset=94))])
+
+
+## DIE -----------------------
+DIE DW_TAG_base_type, size=7, has_children=False
+    |DW_AT_byte_size   :  AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=4, raw_value=4, offset=99)
+    |DW_AT_encoding    :  AttributeValue(name='DW_AT_encoding', form='DW_FORM_data1', value=5, raw_value=5, offset=100)
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_string', value='int', raw_value='int', offset=101)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_base_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_byte_size', AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=4, raw_value=4, offset=99)), ('DW_AT_encoding', AttributeValue(name='DW_AT_encoding', form='DW_FORM_data1', value=5, raw_value=5, offset=100)), ('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_string', value='int', raw_value='int', offset=101))])
+
+
+## DIE -----------------------
+DIE DW_TAG_base_type, size=7, has_children=False
+    |DW_AT_byte_size   :  AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=106)
+    |DW_AT_encoding    :  AttributeValue(name='DW_AT_encoding', form='DW_FORM_data1', value=5, raw_value=5, offset=107)
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='long int', raw_value=165, offset=108)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_base_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_byte_size', AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=106)), ('DW_AT_encoding', AttributeValue(name='DW_AT_encoding', form='DW_FORM_data1', value=5, raw_value=5, offset=107)), ('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='long int', raw_value=165, offset=108))])
+
+
+## DIE -----------------------
+DIE DW_TAG_typedef, size=11, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='__off_t', raw_value=583, offset=113)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=3, raw_value=3, offset=117)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=140, raw_value=140, offset=118)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=105, raw_value=105, offset=119)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_typedef
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='__off_t', raw_value=583, offset=113)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=3, raw_value=3, offset=117)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=140, raw_value=140, offset=118)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=105, raw_value=105, offset=119))])
+
+
+## DIE -----------------------
+DIE DW_TAG_typedef, size=11, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='__off64_t', raw_value=558, offset=124)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=3, raw_value=3, offset=128)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=141, raw_value=141, offset=129)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=105, raw_value=105, offset=130)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_typedef
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='__off64_t', raw_value=558, offset=124)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=3, raw_value=3, offset=128)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=141, raw_value=141, offset=129)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=105, raw_value=105, offset=130))])
+
+
+## DIE -----------------------
+DIE DW_TAG_base_type, size=7, has_children=False
+    |DW_AT_byte_size   :  AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=135)
+    |DW_AT_encoding    :  AttributeValue(name='DW_AT_encoding', form='DW_FORM_data1', value=7, raw_value=7, offset=136)
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='sizetype', raw_value=69, offset=137)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_base_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_byte_size', AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=135)), ('DW_AT_encoding', AttributeValue(name='DW_AT_encoding', form='DW_FORM_data1', value=7, raw_value=7, offset=136)), ('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='sizetype', raw_value=69, offset=137))])
+
+
+## DIE -----------------------
+DIE DW_TAG_pointer_type, size=2, has_children=False
+    |DW_AT_byte_size   :  AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=142)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_pointer_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_byte_size', AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=142))])
+
+
+## DIE -----------------------
+DIE DW_TAG_pointer_type, size=6, has_children=False
+    |DW_AT_byte_size   :  AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=144)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=149, raw_value=149, offset=145)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_pointer_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_byte_size', AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=144)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=149, raw_value=149, offset=145))])
+
+
+## DIE -----------------------
+DIE DW_TAG_base_type, size=7, has_children=False
+    |DW_AT_byte_size   :  AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=1, raw_value=1, offset=150)
+    |DW_AT_encoding    :  AttributeValue(name='DW_AT_encoding', form='DW_FORM_data1', value=6, raw_value=6, offset=151)
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='char', raw_value=272, offset=152)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_base_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_byte_size', AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=1, raw_value=1, offset=150)), ('DW_AT_encoding', AttributeValue(name='DW_AT_encoding', form='DW_FORM_data1', value=6, raw_value=6, offset=151)), ('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='char', raw_value=272, offset=152))])
+
+
+## DIE -----------------------
+DIE DW_TAG_const_type, size=5, has_children=False
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=149, raw_value=149, offset=157)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_const_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=149, raw_value=149, offset=157))])
+
+
+## DIE -----------------------
+DIE DW_TAG_structure_type, size=12, has_children=True
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_FILE', raw_value=21, offset=162)
+    |DW_AT_byte_size   :  AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=216, raw_value=216, offset=166)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=167)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=245, raw_value=245, offset=168)
+    |DW_AT_sibling     :  AttributeValue(name='DW_AT_sibling', form='DW_FORM_ref4', value=545, raw_value=545, offset=169)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_structure_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_FILE', raw_value=21, offset=162)), ('DW_AT_byte_size', AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=216, raw_value=216, offset=166)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=167)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=245, raw_value=245, offset=168)), ('DW_AT_sibling', AttributeValue(name='DW_AT_sibling', form='DW_FORM_ref4', value=545, raw_value=545, offset=169))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=12, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_flags', raw_value=92, offset=174)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=178)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=246, raw_value=246, offset=179)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=180)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=0, raw_value=0, offset=184)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_flags', raw_value=92, offset=174)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=178)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=246, raw_value=246, offset=179)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=180)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=0, raw_value=0, offset=184))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=12, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_read_ptr', raw_value=721, offset=186)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=190)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=251, raw_value=251, offset=191)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=192)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=8, raw_value=8, offset=196)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_read_ptr', raw_value=721, offset=186)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=190)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=251, raw_value=251, offset=191)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=192)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=8, raw_value=8, offset=196))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=12, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_read_end', raw_value=134, offset=198)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=202)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=252, raw_value=252, offset=203)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=204)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=16, raw_value=16, offset=208)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_read_end', raw_value=134, offset=198)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=202)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=252, raw_value=252, offset=203)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=204)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=16, raw_value=16, offset=208))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=12, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_read_base', raw_value=640, offset=210)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=214)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=253, raw_value=253, offset=215)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=216)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=24, raw_value=24, offset=220)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_read_base', raw_value=640, offset=210)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=214)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=253, raw_value=253, offset=215)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=216)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=24, raw_value=24, offset=220))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=12, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_write_base', raw_value=403, offset=222)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=226)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=254, raw_value=254, offset=227)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=228)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=32, raw_value=32, offset=232)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_write_base', raw_value=403, offset=222)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=226)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=254, raw_value=254, offset=227)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=228)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=32, raw_value=32, offset=232))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=12, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_write_ptr', raw_value=78, offset=234)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=238)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=255, raw_value=255, offset=239)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=240)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=40, raw_value=40, offset=244)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_write_ptr', raw_value=78, offset=234)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=238)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=255, raw_value=255, offset=239)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=240)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=40, raw_value=40, offset=244))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_write_end', raw_value=544, offset=246)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=250)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=256, raw_value=256, offset=251)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=253)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=48, raw_value=48, offset=257)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_write_end', raw_value=544, offset=246)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=250)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=256, raw_value=256, offset=251)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=253)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=48, raw_value=48, offset=257))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_buf_base', raw_value=613, offset=259)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=263)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=257, raw_value=257, offset=264)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=266)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=56, raw_value=56, offset=270)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_buf_base', raw_value=613, offset=259)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=263)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=257, raw_value=257, offset=264)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=266)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=56, raw_value=56, offset=270))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_buf_end', raw_value=434, offset=272)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=276)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=258, raw_value=258, offset=277)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=279)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=64, raw_value=64, offset=283)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_buf_end', raw_value=434, offset=272)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=276)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=258, raw_value=258, offset=277)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=279)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=64, raw_value=64, offset=283))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_save_base', raw_value=674, offset=285)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=289)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=260, raw_value=260, offset=290)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=292)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=72, raw_value=72, offset=296)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_save_base', raw_value=674, offset=285)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=289)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=260, raw_value=260, offset=290)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=292)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=72, raw_value=72, offset=296))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_backup_base', raw_value=591, offset=298)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=302)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=261, raw_value=261, offset=303)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=305)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=80, raw_value=80, offset=309)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_backup_base', raw_value=591, offset=298)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=302)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=261, raw_value=261, offset=303)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=305)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=80, raw_value=80, offset=309))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_save_end', raw_value=39, offset=311)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=315)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=262, raw_value=262, offset=316)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=318)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=88, raw_value=88, offset=322)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_save_end', raw_value=39, offset=311)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=315)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=262, raw_value=262, offset=316)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=318)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=88, raw_value=88, offset=322))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_markers', raw_value=125, offset=324)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=328)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=264, raw_value=264, offset=329)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=601, raw_value=601, offset=331)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=96, raw_value=96, offset=335)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_markers', raw_value=125, offset=324)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=328)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=264, raw_value=264, offset=329)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=601, raw_value=601, offset=331)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=96, raw_value=96, offset=335))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_chain', raw_value=576, offset=337)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=341)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=266, raw_value=266, offset=342)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=607, raw_value=607, offset=344)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=104, raw_value=104, offset=348)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_chain', raw_value=576, offset=337)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=341)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=266, raw_value=266, offset=342)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=607, raw_value=607, offset=344)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=104, raw_value=104, offset=348))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_fileno', raw_value=568, offset=350)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=354)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=268, raw_value=268, offset=355)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=357)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=112, raw_value=112, offset=361)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_fileno', raw_value=568, offset=350)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=354)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=268, raw_value=268, offset=355)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=357)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=112, raw_value=112, offset=361))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_flags2', raw_value=626, offset=363)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=367)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=272, raw_value=272, offset=368)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=370)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=116, raw_value=116, offset=374)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_flags2', raw_value=626, offset=363)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=367)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=272, raw_value=272, offset=368)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=370)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=116, raw_value=116, offset=374))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_old_offset', raw_value=251, offset=376)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=380)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=274, raw_value=274, offset=381)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=112, raw_value=112, offset=383)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=120, raw_value=120, offset=387)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_old_offset', raw_value=251, offset=376)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=380)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=274, raw_value=274, offset=381)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=112, raw_value=112, offset=383)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=120, raw_value=120, offset=387))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_cur_column', raw_value=198, offset=389)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=393)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=278, raw_value=278, offset=394)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=70, raw_value=70, offset=396)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=128, raw_value=128, offset=400)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_cur_column', raw_value=198, offset=389)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=393)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=278, raw_value=278, offset=394)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=70, raw_value=70, offset=396)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=128, raw_value=128, offset=400))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_vtable_offset', raw_value=659, offset=402)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=406)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=279, raw_value=279, offset=407)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=84, raw_value=84, offset=409)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=130, raw_value=130, offset=413)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_vtable_offset', raw_value=659, offset=402)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=406)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=279, raw_value=279, offset=407)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=84, raw_value=84, offset=409)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=130, raw_value=130, offset=413))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_shortbuf', raw_value=359, offset=415)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=419)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=280, raw_value=280, offset=420)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=613, raw_value=613, offset=422)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=131, raw_value=131, offset=426)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_shortbuf', raw_value=359, offset=415)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=419)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=280, raw_value=280, offset=420)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=613, raw_value=613, offset=422)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=131, raw_value=131, offset=426))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_lock', raw_value=159, offset=428)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=432)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=284, raw_value=284, offset=433)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=629, raw_value=629, offset=435)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=136, raw_value=136, offset=439)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_lock', raw_value=159, offset=428)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=432)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=284, raw_value=284, offset=433)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=629, raw_value=629, offset=435)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=136, raw_value=136, offset=439))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_offset', raw_value=255, offset=441)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=445)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=293, raw_value=293, offset=446)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=123, raw_value=123, offset=448)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=144, raw_value=144, offset=452)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_offset', raw_value=255, offset=441)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=445)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=293, raw_value=293, offset=446)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=123, raw_value=123, offset=448)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=144, raw_value=144, offset=452))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='__pad1', raw_value=470, offset=454)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=458)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=301, raw_value=301, offset=459)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=141, raw_value=141, offset=461)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=152, raw_value=152, offset=465)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='__pad1', raw_value=470, offset=454)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=458)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=301, raw_value=301, offset=459)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=141, raw_value=141, offset=461)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=152, raw_value=152, offset=465))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='__pad2', raw_value=477, offset=467)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=471)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=302, raw_value=302, offset=472)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=141, raw_value=141, offset=474)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=160, raw_value=160, offset=478)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='__pad2', raw_value=477, offset=467)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=471)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=302, raw_value=302, offset=472)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=141, raw_value=141, offset=474)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=160, raw_value=160, offset=478))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='__pad3', raw_value=484, offset=480)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=484)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=303, raw_value=303, offset=485)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=141, raw_value=141, offset=487)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=168, raw_value=168, offset=491)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='__pad3', raw_value=484, offset=480)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=484)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=303, raw_value=303, offset=485)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=141, raw_value=141, offset=487)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=168, raw_value=168, offset=491))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='__pad4', raw_value=491, offset=493)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=497)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=304, raw_value=304, offset=498)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=141, raw_value=141, offset=500)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=176, raw_value=176, offset=504)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='__pad4', raw_value=491, offset=493)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=497)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=304, raw_value=304, offset=498)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=141, raw_value=141, offset=500)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=176, raw_value=176, offset=504))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='__pad5', raw_value=498, offset=506)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=510)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=306, raw_value=306, offset=511)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=45, raw_value=45, offset=513)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=184, raw_value=184, offset=517)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='__pad5', raw_value=498, offset=506)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=510)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=306, raw_value=306, offset=511)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=45, raw_value=45, offset=513)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=184, raw_value=184, offset=517))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_mode', raw_value=634, offset=519)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=523)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=307, raw_value=307, offset=524)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=526)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=192, raw_value=192, offset=530)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_mode', raw_value=634, offset=519)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=523)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=307, raw_value=307, offset=524)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=526)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=192, raw_value=192, offset=530))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=13, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_unused2', raw_value=418, offset=532)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=536)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=309, raw_value=309, offset=537)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=635, raw_value=635, offset=539)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=196, raw_value=196, offset=543)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_unused2', raw_value=418, offset=532)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=536)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=309, raw_value=309, offset=537)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=635, raw_value=635, offset=539)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=196, raw_value=196, offset=543))])
+
+
+## DIE -----------------------
+DIE None, size=1, has_children=None
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+None
+
+
+### die.attributes ------------------------ 
+OrderedDict()
+
+
+## DIE -----------------------
+DIE DW_TAG_typedef, size=7, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_lock_t', raw_value=741, offset=546)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=550)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=154, raw_value=154, offset=551)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_typedef
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_lock_t', raw_value=741, offset=546)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=550)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=154, raw_value=154, offset=551))])
+
+
+## DIE -----------------------
+DIE DW_TAG_structure_type, size=12, has_children=True
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_marker', raw_value=348, offset=553)
+    |DW_AT_byte_size   :  AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=24, raw_value=24, offset=557)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=558)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=160, raw_value=160, offset=559)
+    |DW_AT_sibling     :  AttributeValue(name='DW_AT_sibling', form='DW_FORM_ref4', value=601, raw_value=601, offset=560)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_structure_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_marker', raw_value=348, offset=553)), ('DW_AT_byte_size', AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=24, raw_value=24, offset=557)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=558)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=160, raw_value=160, offset=559)), ('DW_AT_sibling', AttributeValue(name='DW_AT_sibling', form='DW_FORM_ref4', value=601, raw_value=601, offset=560))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=12, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_next', raw_value=505, offset=565)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=569)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=161, raw_value=161, offset=570)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=601, raw_value=601, offset=571)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=0, raw_value=0, offset=575)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_next', raw_value=505, offset=565)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=569)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=161, raw_value=161, offset=570)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=601, raw_value=601, offset=571)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=0, raw_value=0, offset=575))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=12, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_sbuf', raw_value=245, offset=577)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=581)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=162, raw_value=162, offset=582)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=607, raw_value=607, offset=583)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=8, raw_value=8, offset=587)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_sbuf', raw_value=245, offset=577)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=581)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=162, raw_value=162, offset=582)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=607, raw_value=607, offset=583)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=8, raw_value=8, offset=587))])
+
+
+## DIE -----------------------
+DIE DW_TAG_member, size=12, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_pos', raw_value=240, offset=589)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=593)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=166, raw_value=166, offset=594)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=595)
+    |DW_AT_data_member_location:  AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=16, raw_value=16, offset=599)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_member
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_pos', raw_value=240, offset=589)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=593)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=166, raw_value=166, offset=594)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=595)), ('DW_AT_data_member_location', AttributeValue(name='DW_AT_data_member_location', form='DW_FORM_data1', value=16, raw_value=16, offset=599))])
+
+
+## DIE -----------------------
+DIE None, size=1, has_children=None
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+None
+
+
+### die.attributes ------------------------ 
+OrderedDict()
+
+
+## DIE -----------------------
+DIE DW_TAG_pointer_type, size=6, has_children=False
+    |DW_AT_byte_size   :  AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=602)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=552, raw_value=552, offset=603)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_pointer_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_byte_size', AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=602)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=552, raw_value=552, offset=603))])
+
+
+## DIE -----------------------
+DIE DW_TAG_pointer_type, size=6, has_children=False
+    |DW_AT_byte_size   :  AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=608)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=161, raw_value=161, offset=609)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_pointer_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_byte_size', AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=608)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=161, raw_value=161, offset=609))])
+
+
+## DIE -----------------------
+DIE DW_TAG_array_type, size=9, has_children=True
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=149, raw_value=149, offset=614)
+    |DW_AT_sibling     :  AttributeValue(name='DW_AT_sibling', form='DW_FORM_ref4', value=629, raw_value=629, offset=618)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_array_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=149, raw_value=149, offset=614)), ('DW_AT_sibling', AttributeValue(name='DW_AT_sibling', form='DW_FORM_ref4', value=629, raw_value=629, offset=618))])
+
+
+## DIE -----------------------
+DIE DW_TAG_subrange_type, size=6, has_children=False
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=134, raw_value=134, offset=623)
+    |DW_AT_upper_bound :  AttributeValue(name='DW_AT_upper_bound', form='DW_FORM_data1', value=0, raw_value=0, offset=627)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_subrange_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=134, raw_value=134, offset=623)), ('DW_AT_upper_bound', AttributeValue(name='DW_AT_upper_bound', form='DW_FORM_data1', value=0, raw_value=0, offset=627))])
+
+
+## DIE -----------------------
+DIE None, size=1, has_children=None
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+None
+
+
+### die.attributes ------------------------ 
+OrderedDict()
+
+
+## DIE -----------------------
+DIE DW_TAG_pointer_type, size=6, has_children=False
+    |DW_AT_byte_size   :  AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=630)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=545, raw_value=545, offset=631)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_pointer_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_byte_size', AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=630)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=545, raw_value=545, offset=631))])
+
+
+## DIE -----------------------
+DIE DW_TAG_array_type, size=9, has_children=True
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=149, raw_value=149, offset=636)
+    |DW_AT_sibling     :  AttributeValue(name='DW_AT_sibling', form='DW_FORM_ref4', value=651, raw_value=651, offset=640)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_array_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=149, raw_value=149, offset=636)), ('DW_AT_sibling', AttributeValue(name='DW_AT_sibling', form='DW_FORM_ref4', value=651, raw_value=651, offset=640))])
+
+
+## DIE -----------------------
+DIE DW_TAG_subrange_type, size=6, has_children=False
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=134, raw_value=134, offset=645)
+    |DW_AT_upper_bound :  AttributeValue(name='DW_AT_upper_bound', form='DW_FORM_data1', value=19, raw_value=19, offset=649)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_subrange_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=134, raw_value=134, offset=645)), ('DW_AT_upper_bound', AttributeValue(name='DW_AT_upper_bound', form='DW_FORM_data1', value=19, raw_value=19, offset=649))])
+
+
+## DIE -----------------------
+DIE None, size=1, has_children=None
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+None
+
+
+### die.attributes ------------------------ 
+OrderedDict()
+
+
+## DIE -----------------------
+DIE DW_TAG_structure_type, size=5, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_FILE_plus', raw_value=226, offset=652)
+    |DW_AT_declaration :  AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=656)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_structure_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_FILE_plus', raw_value=226, offset=652)), ('DW_AT_declaration', AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=656))])
+
+
+## DIE -----------------------
+DIE DW_TAG_variable, size=12, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_2_1_stdin_', raw_value=333, offset=657)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=661)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=319, raw_value=319, offset=662)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=651, raw_value=651, offset=664)
+    |DW_AT_external    :  AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=668)
+    |DW_AT_declaration :  AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=668)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_variable
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_2_1_stdin_', raw_value=333, offset=657)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=661)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=319, raw_value=319, offset=662)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=651, raw_value=651, offset=664)), ('DW_AT_external', AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=668)), ('DW_AT_declaration', AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=668))])
+
+
+## DIE -----------------------
+DIE DW_TAG_variable, size=12, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_2_1_stdout_', raw_value=99, offset=669)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=673)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=320, raw_value=320, offset=674)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=651, raw_value=651, offset=676)
+    |DW_AT_external    :  AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=680)
+    |DW_AT_declaration :  AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=680)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_variable
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_2_1_stdout_', raw_value=99, offset=669)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=673)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=320, raw_value=320, offset=674)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=651, raw_value=651, offset=676)), ('DW_AT_external', AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=680)), ('DW_AT_declaration', AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=680))])
+
+
+## DIE -----------------------
+DIE DW_TAG_variable, size=12, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_2_1_stderr_', raw_value=210, offset=681)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=685)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=321, raw_value=321, offset=686)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=651, raw_value=651, offset=688)
+    |DW_AT_external    :  AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=692)
+    |DW_AT_declaration :  AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=692)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_variable
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='_IO_2_1_stderr_', raw_value=210, offset=681)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=4, raw_value=4, offset=685)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=321, raw_value=321, offset=686)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=651, raw_value=651, offset=688)), ('DW_AT_external', AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=692)), ('DW_AT_declaration', AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=692))])
+
+
+## DIE -----------------------
+DIE DW_TAG_pointer_type, size=6, has_children=False
+    |DW_AT_byte_size   :  AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=693)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=156, raw_value=156, offset=694)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_pointer_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_byte_size', AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=693)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=156, raw_value=156, offset=694))])
+
+
+## DIE -----------------------
+DIE DW_TAG_const_type, size=5, has_children=False
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=692, raw_value=692, offset=699)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_const_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=692, raw_value=692, offset=699))])
+
+
+## DIE -----------------------
+DIE DW_TAG_variable, size=11, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='stdin', raw_value=607, offset=704)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=5, raw_value=5, offset=708)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=135, raw_value=135, offset=709)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=607, raw_value=607, offset=710)
+    |DW_AT_external    :  AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=714)
+    |DW_AT_declaration :  AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=714)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_variable
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='stdin', raw_value=607, offset=704)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=5, raw_value=5, offset=708)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=135, raw_value=135, offset=709)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=607, raw_value=607, offset=710)), ('DW_AT_external', AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=714)), ('DW_AT_declaration', AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=714))])
+
+
+## DIE -----------------------
+DIE DW_TAG_variable, size=11, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='stdout', raw_value=734, offset=715)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=5, raw_value=5, offset=719)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=136, raw_value=136, offset=720)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=607, raw_value=607, offset=721)
+    |DW_AT_external    :  AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=725)
+    |DW_AT_declaration :  AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=725)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_variable
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='stdout', raw_value=734, offset=715)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=5, raw_value=5, offset=719)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=136, raw_value=136, offset=720)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=607, raw_value=607, offset=721)), ('DW_AT_external', AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=725)), ('DW_AT_declaration', AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=725))])
+
+
+## DIE -----------------------
+DIE DW_TAG_variable, size=11, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='stderr', raw_value=152, offset=726)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=5, raw_value=5, offset=730)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=137, raw_value=137, offset=731)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=607, raw_value=607, offset=732)
+    |DW_AT_external    :  AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=736)
+    |DW_AT_declaration :  AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=736)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_variable
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='stderr', raw_value=152, offset=726)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=5, raw_value=5, offset=730)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=137, raw_value=137, offset=731)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=607, raw_value=607, offset=732)), ('DW_AT_external', AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=736)), ('DW_AT_declaration', AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=736))])
+
+
+## DIE -----------------------
+DIE DW_TAG_variable, size=11, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='sys_nerr', raw_value=30, offset=737)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=6, raw_value=6, offset=741)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=26, raw_value=26, offset=742)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=743)
+    |DW_AT_external    :  AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=747)
+    |DW_AT_declaration :  AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=747)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_variable
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='sys_nerr', raw_value=30, offset=737)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=6, raw_value=6, offset=741)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=26, raw_value=26, offset=742)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=743)), ('DW_AT_external', AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=747)), ('DW_AT_declaration', AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=747))])
+
+
+## DIE -----------------------
+DIE DW_TAG_array_type, size=9, has_children=True
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=698, raw_value=698, offset=748)
+    |DW_AT_sibling     :  AttributeValue(name='DW_AT_sibling', form='DW_FORM_ref4', value=758, raw_value=758, offset=752)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_array_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=698, raw_value=698, offset=748)), ('DW_AT_sibling', AttributeValue(name='DW_AT_sibling', form='DW_FORM_ref4', value=758, raw_value=758, offset=752))])
+
+
+## DIE -----------------------
+DIE DW_TAG_subrange_type, size=1, has_children=False
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_subrange_type
+
+
+### die.attributes ------------------------ 
+OrderedDict()
+
+
+## DIE -----------------------
+DIE None, size=1, has_children=None
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+None
+
+
+### die.attributes ------------------------ 
+OrderedDict()
+
+
+## DIE -----------------------
+DIE DW_TAG_const_type, size=5, has_children=False
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=747, raw_value=747, offset=759)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_const_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=747, raw_value=747, offset=759))])
+
+
+## DIE -----------------------
+DIE DW_TAG_variable, size=11, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='sys_errlist', raw_value=688, offset=764)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=6, raw_value=6, offset=768)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=27, raw_value=27, offset=769)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=758, raw_value=758, offset=770)
+    |DW_AT_external    :  AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=774)
+    |DW_AT_declaration :  AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=774)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_variable
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='sys_errlist', raw_value=688, offset=764)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=6, raw_value=6, offset=768)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=27, raw_value=27, offset=769)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=758, raw_value=758, offset=770)), ('DW_AT_external', AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=774)), ('DW_AT_declaration', AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=774))])
+
+
+## DIE -----------------------
+DIE DW_TAG_variable, size=12, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='__environ', raw_value=115, offset=775)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=7, raw_value=7, offset=779)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=546, raw_value=546, offset=780)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=786, raw_value=786, offset=782)
+    |DW_AT_external    :  AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=786)
+    |DW_AT_declaration :  AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=786)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_variable
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='__environ', raw_value=115, offset=775)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=7, raw_value=7, offset=779)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data2', value=546, raw_value=546, offset=780)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=786, raw_value=786, offset=782)), ('DW_AT_external', AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=786)), ('DW_AT_declaration', AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=786))])
+
+
+## DIE -----------------------
+DIE DW_TAG_pointer_type, size=6, has_children=False
+    |DW_AT_byte_size   :  AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=787)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=788)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_pointer_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_byte_size', AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=787)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=788))])
+
+
+## DIE -----------------------
+DIE DW_TAG_variable, size=11, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='optarg', raw_value=7, offset=793)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=8, raw_value=8, offset=797)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=36, raw_value=36, offset=798)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=799)
+    |DW_AT_external    :  AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=803)
+    |DW_AT_declaration :  AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=803)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_variable
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='optarg', raw_value=7, offset=793)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=8, raw_value=8, offset=797)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=36, raw_value=36, offset=798)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=143, raw_value=143, offset=799)), ('DW_AT_external', AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=803)), ('DW_AT_declaration', AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=803))])
+
+
+## DIE -----------------------
+DIE DW_TAG_variable, size=11, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='optind', raw_value=0, offset=804)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=8, raw_value=8, offset=808)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=50, raw_value=50, offset=809)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=810)
+    |DW_AT_external    :  AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=814)
+    |DW_AT_declaration :  AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=814)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_variable
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='optind', raw_value=0, offset=804)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=8, raw_value=8, offset=808)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=50, raw_value=50, offset=809)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=810)), ('DW_AT_external', AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=814)), ('DW_AT_declaration', AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=814))])
+
+
+## DIE -----------------------
+DIE DW_TAG_variable, size=11, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='opterr', raw_value=427, offset=815)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=8, raw_value=8, offset=819)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=55, raw_value=55, offset=820)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=821)
+    |DW_AT_external    :  AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=825)
+    |DW_AT_declaration :  AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=825)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_variable
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='opterr', raw_value=427, offset=815)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=8, raw_value=8, offset=819)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=55, raw_value=55, offset=820)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=821)), ('DW_AT_external', AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=825)), ('DW_AT_declaration', AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=825))])
+
+
+## DIE -----------------------
+DIE DW_TAG_variable, size=11, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='optopt', raw_value=700, offset=826)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=8, raw_value=8, offset=830)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=59, raw_value=59, offset=831)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=832)
+    |DW_AT_external    :  AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=836)
+    |DW_AT_declaration :  AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=836)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_variable
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='optopt', raw_value=700, offset=826)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=8, raw_value=8, offset=830)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=59, raw_value=59, offset=831)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=832)), ('DW_AT_external', AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=836)), ('DW_AT_declaration', AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=836))])
+
+
+## DIE -----------------------
+DIE DW_TAG_subprogram, size=29, has_children=True
+    |DW_AT_external    :  AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=837)
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='another_unused_function', raw_value=174, offset=837)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=841)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=22, raw_value=22, offset=842)
+    |DW_AT_prototyped  :  AttributeValue(name='DW_AT_prototyped', form='DW_FORM_flag_present', value='', raw_value='', offset=843)
+    |DW_AT_low_pc      :  AttributeValue(name='DW_AT_low_pc', form='DW_FORM_addr', value=4195976, raw_value=4195976, offset=843)
+    |DW_AT_high_pc     :  AttributeValue(name='DW_AT_high_pc', form='DW_FORM_data8', value=12, raw_value=12, offset=851)
+    |DW_AT_frame_base  :  AttributeValue(name='DW_AT_frame_base', form='DW_FORM_exprloc', value=[156], raw_value=[156], offset=859)
+    |DW_AT_GNU_all_call_sites:  AttributeValue(name='DW_AT_GNU_all_call_sites', form='DW_FORM_flag_present', value='', raw_value='', offset=861)
+    |DW_AT_sibling     :  AttributeValue(name='DW_AT_sibling', form='DW_FORM_ref4', value=878, raw_value=878, offset=861)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_subprogram
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_external', AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=837)), ('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='another_unused_function', raw_value=174, offset=837)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=841)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=22, raw_value=22, offset=842)), ('DW_AT_prototyped', AttributeValue(name='DW_AT_prototyped', form='DW_FORM_flag_present', value='', raw_value='', offset=843)), ('DW_AT_low_pc', AttributeValue(name='DW_AT_low_pc', form='DW_FORM_addr', value=4195976, raw_value=4195976, offset=843)), ('DW_AT_high_pc', AttributeValue(name='DW_AT_high_pc', form='DW_FORM_data8', value=12, raw_value=12, offset=851)), ('DW_AT_frame_base', AttributeValue(name='DW_AT_frame_base', form='DW_FORM_exprloc', value=[156], raw_value=[156], offset=859)), ('DW_AT_GNU_all_call_sites', AttributeValue(name='DW_AT_GNU_all_call_sites', form='DW_FORM_flag_present', value='', raw_value='', offset=861)), ('DW_AT_sibling', AttributeValue(name='DW_AT_sibling', form='DW_FORM_ref4', value=878, raw_value=878, offset=861))])
+
+
+## DIE -----------------------
+DIE DW_TAG_formal_parameter, size=12, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_string', value='c', raw_value='c', offset=866)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=868)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=22, raw_value=22, offset=869)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=149, raw_value=149, offset=870)
+    |DW_AT_location    :  AttributeValue(name='DW_AT_location', form='DW_FORM_exprloc', value=[145, 108], raw_value=[145, 108], offset=874)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_formal_parameter
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_string', value='c', raw_value='c', offset=866)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=868)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=22, raw_value=22, offset=869)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=149, raw_value=149, offset=870)), ('DW_AT_location', AttributeValue(name='DW_AT_location', form='DW_FORM_exprloc', value=[145, 108], raw_value=[145, 108], offset=874))])
+
+
+## DIE -----------------------
+DIE None, size=1, has_children=None
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+None
+
+
+### die.attributes ------------------------ 
+OrderedDict()
+
+
+## DIE -----------------------
+DIE DW_TAG_subprogram, size=33, has_children=True
+    |DW_AT_external    :  AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=879)
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='unused_function', raw_value=182, offset=879)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=883)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=18, raw_value=18, offset=884)
+    |DW_AT_prototyped  :  AttributeValue(name='DW_AT_prototyped', form='DW_FORM_flag_present', value='', raw_value='', offset=885)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=885)
+    |DW_AT_low_pc      :  AttributeValue(name='DW_AT_low_pc', form='DW_FORM_addr', value=4195956, raw_value=4195956, offset=889)
+    |DW_AT_high_pc     :  AttributeValue(name='DW_AT_high_pc', form='DW_FORM_data8', value=20, raw_value=20, offset=897)
+    |DW_AT_frame_base  :  AttributeValue(name='DW_AT_frame_base', form='DW_FORM_exprloc', value=[156], raw_value=[156], offset=905)
+    |DW_AT_GNU_all_call_sites:  AttributeValue(name='DW_AT_GNU_all_call_sites', form='DW_FORM_flag_present', value='', raw_value='', offset=907)
+    |DW_AT_sibling     :  AttributeValue(name='DW_AT_sibling', form='DW_FORM_ref4', value=936, raw_value=936, offset=907)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_subprogram
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_external', AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=879)), ('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='unused_function', raw_value=182, offset=879)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=883)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=18, raw_value=18, offset=884)), ('DW_AT_prototyped', AttributeValue(name='DW_AT_prototyped', form='DW_FORM_flag_present', value='', raw_value='', offset=885)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=885)), ('DW_AT_low_pc', AttributeValue(name='DW_AT_low_pc', form='DW_FORM_addr', value=4195956, raw_value=4195956, offset=889)), ('DW_AT_high_pc', AttributeValue(name='DW_AT_high_pc', form='DW_FORM_data8', value=20, raw_value=20, offset=897)), ('DW_AT_frame_base', AttributeValue(name='DW_AT_frame_base', form='DW_FORM_exprloc', value=[156], raw_value=[156], offset=905)), ('DW_AT_GNU_all_call_sites', AttributeValue(name='DW_AT_GNU_all_call_sites', form='DW_FORM_flag_present', value='', raw_value='', offset=907)), ('DW_AT_sibling', AttributeValue(name='DW_AT_sibling', form='DW_FORM_ref4', value=936, raw_value=936, offset=907))])
+
+
+## DIE -----------------------
+DIE DW_TAG_formal_parameter, size=12, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_string', value='x', raw_value='x', offset=912)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=914)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=18, raw_value=18, offset=915)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=916)
+    |DW_AT_location    :  AttributeValue(name='DW_AT_location', form='DW_FORM_exprloc', value=[145, 108], raw_value=[145, 108], offset=920)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_formal_parameter
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_string', value='x', raw_value='x', offset=912)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=914)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=18, raw_value=18, offset=915)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=916)), ('DW_AT_location', AttributeValue(name='DW_AT_location', form='DW_FORM_exprloc', value=[145, 108], raw_value=[145, 108], offset=920))])
+
+
+## DIE -----------------------
+DIE DW_TAG_formal_parameter, size=12, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_string', value='y', raw_value='y', offset=924)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=926)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=18, raw_value=18, offset=927)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=928)
+    |DW_AT_location    :  AttributeValue(name='DW_AT_location', form='DW_FORM_exprloc', value=[145, 104], raw_value=[145, 104], offset=932)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_formal_parameter
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_string', value='y', raw_value='y', offset=924)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=926)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=18, raw_value=18, offset=927)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=928)), ('DW_AT_location', AttributeValue(name='DW_AT_location', form='DW_FORM_exprloc', value=[145, 104], raw_value=[145, 104], offset=932))])
+
+
+## DIE -----------------------
+DIE None, size=1, has_children=None
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+None
+
+
+### die.attributes ------------------------ 
+OrderedDict()
+
+
+## DIE -----------------------
+DIE DW_TAG_subprogram, size=33, has_children=True
+    |DW_AT_external    :  AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=937)
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='main', raw_value=446, offset=937)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=941)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=9, raw_value=9, offset=942)
+    |DW_AT_prototyped  :  AttributeValue(name='DW_AT_prototyped', form='DW_FORM_flag_present', value='', raw_value='', offset=943)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=943)
+    |DW_AT_low_pc      :  AttributeValue(name='DW_AT_low_pc', form='DW_FORM_addr', value=4195837, raw_value=4195837, offset=947)
+    |DW_AT_high_pc     :  AttributeValue(name='DW_AT_high_pc', form='DW_FORM_data8', value=119, raw_value=119, offset=955)
+    |DW_AT_frame_base  :  AttributeValue(name='DW_AT_frame_base', form='DW_FORM_exprloc', value=[156], raw_value=[156], offset=963)
+    |DW_AT_GNU_all_tail_call_sites:  AttributeValue(name='DW_AT_GNU_all_tail_call_sites', form='DW_FORM_flag_present', value='', raw_value='', offset=965)
+    |DW_AT_sibling     :  AttributeValue(name='DW_AT_sibling', form='DW_FORM_ref4', value=1025, raw_value=1025, offset=965)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_subprogram
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_external', AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=937)), ('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='main', raw_value=446, offset=937)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=941)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=9, raw_value=9, offset=942)), ('DW_AT_prototyped', AttributeValue(name='DW_AT_prototyped', form='DW_FORM_flag_present', value='', raw_value='', offset=943)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=943)), ('DW_AT_low_pc', AttributeValue(name='DW_AT_low_pc', form='DW_FORM_addr', value=4195837, raw_value=4195837, offset=947)), ('DW_AT_high_pc', AttributeValue(name='DW_AT_high_pc', form='DW_FORM_data8', value=119, raw_value=119, offset=955)), ('DW_AT_frame_base', AttributeValue(name='DW_AT_frame_base', form='DW_FORM_exprloc', value=[156], raw_value=[156], offset=963)), ('DW_AT_GNU_all_tail_call_sites', AttributeValue(name='DW_AT_GNU_all_tail_call_sites', form='DW_FORM_flag_present', value='', raw_value='', offset=965)), ('DW_AT_sibling', AttributeValue(name='DW_AT_sibling', form='DW_FORM_ref4', value=1025, raw_value=1025, offset=965))])
+
+
+## DIE -----------------------
+DIE DW_TAG_formal_parameter, size=14, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='argc', raw_value=328, offset=970)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=974)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=9, raw_value=9, offset=975)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=976)
+    |DW_AT_location    :  AttributeValue(name='DW_AT_location', form='DW_FORM_exprloc', value=[145, 92], raw_value=[145, 92], offset=980)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_formal_parameter
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='argc', raw_value=328, offset=970)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=974)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=9, raw_value=9, offset=975)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=976)), ('DW_AT_location', AttributeValue(name='DW_AT_location', form='DW_FORM_exprloc', value=[145, 92], raw_value=[145, 92], offset=980))])
+
+
+## DIE -----------------------
+DIE DW_TAG_formal_parameter, size=14, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='argv', raw_value=147, offset=984)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=988)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=9, raw_value=9, offset=989)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=1025, raw_value=1025, offset=990)
+    |DW_AT_location    :  AttributeValue(name='DW_AT_location', form='DW_FORM_exprloc', value=[145, 80], raw_value=[145, 80], offset=994)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_formal_parameter
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='argv', raw_value=147, offset=984)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=988)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=9, raw_value=9, offset=989)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=1025, raw_value=1025, offset=990)), ('DW_AT_location', AttributeValue(name='DW_AT_location', form='DW_FORM_exprloc', value=[145, 80], raw_value=[145, 80], offset=994))])
+
+
+## DIE -----------------------
+DIE DW_TAG_variable, size=14, has_children=False
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='result', raw_value=14, offset=998)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=1002)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=12, raw_value=12, offset=1003)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=1004)
+    |DW_AT_location    :  AttributeValue(name='DW_AT_location', form='DW_FORM_exprloc', value=[145, 108], raw_value=[145, 108], offset=1008)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_variable
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='result', raw_value=14, offset=998)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=1002)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=12, raw_value=12, offset=1003)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=1004)), ('DW_AT_location', AttributeValue(name='DW_AT_location', form='DW_FORM_exprloc', value=[145, 108], raw_value=[145, 108], offset=1008))])
+
+
+## DIE -----------------------
+DIE DW_TAG_subprogram, size=11, has_children=True
+    |DW_AT_external    :  AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=1012)
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='open', raw_value=654, offset=1012)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=1016)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=12, raw_value=12, offset=1017)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=1018)
+    |DW_AT_declaration :  AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=1022)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_subprogram
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_external', AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=1012)), ('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='open', raw_value=654, offset=1012)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=1016)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=12, raw_value=12, offset=1017)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=98, raw_value=98, offset=1018)), ('DW_AT_declaration', AttributeValue(name='DW_AT_declaration', form='DW_FORM_flag_present', value='', raw_value='', offset=1022))])
+
+
+## DIE -----------------------
+DIE DW_TAG_unspecified_parameters, size=1, has_children=False
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_unspecified_parameters
+
+
+### die.attributes ------------------------ 
+OrderedDict()
+
+
+## DIE -----------------------
+DIE None, size=1, has_children=None
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+None
+
+
+### die.attributes ------------------------ 
+OrderedDict()
+
+
+## DIE -----------------------
+DIE None, size=1, has_children=None
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+None
+
+
+### die.attributes ------------------------ 
+OrderedDict()
+
+
+## DIE -----------------------
+DIE DW_TAG_pointer_type, size=6, has_children=False
+    |DW_AT_byte_size   :  AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=1026)
+    |DW_AT_type        :  AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=692, raw_value=692, offset=1027)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_pointer_type
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_byte_size', AttributeValue(name='DW_AT_byte_size', form='DW_FORM_data1', value=8, raw_value=8, offset=1026)), ('DW_AT_type', AttributeValue(name='DW_AT_type', form='DW_FORM_ref4', value=692, raw_value=692, offset=1027))])
+
+
+## DIE -----------------------
+DIE DW_TAG_subprogram, size=25, has_children=False
+    |DW_AT_external    :  AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=1032)
+    |DW_AT_name        :  AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='empty_function', raw_value=511, offset=1032)
+    |DW_AT_decl_file   :  AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=1036)
+    |DW_AT_decl_line   :  AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=5, raw_value=5, offset=1037)
+    |DW_AT_low_pc      :  AttributeValue(name='DW_AT_low_pc', form='DW_FORM_addr', value=4195830, raw_value=4195830, offset=1038)
+    |DW_AT_high_pc     :  AttributeValue(name='DW_AT_high_pc', form='DW_FORM_data8', value=7, raw_value=7, offset=1046)
+    |DW_AT_frame_base  :  AttributeValue(name='DW_AT_frame_base', form='DW_FORM_exprloc', value=[156], raw_value=[156], offset=1054)
+    |DW_AT_GNU_all_call_sites:  AttributeValue(name='DW_AT_GNU_all_call_sites', form='DW_FORM_flag_present', value='', raw_value='', offset=1056)
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+DW_TAG_subprogram
+
+
+### die.attributes ------------------------ 
+OrderedDict([('DW_AT_external', AttributeValue(name='DW_AT_external', form='DW_FORM_flag_present', value='', raw_value='', offset=1032)), ('DW_AT_name', AttributeValue(name='DW_AT_name', form='DW_FORM_strp', value='empty_function', raw_value=511, offset=1032)), ('DW_AT_decl_file', AttributeValue(name='DW_AT_decl_file', form='DW_FORM_data1', value=1, raw_value=1, offset=1036)), ('DW_AT_decl_line', AttributeValue(name='DW_AT_decl_line', form='DW_FORM_data1', value=5, raw_value=5, offset=1037)), ('DW_AT_low_pc', AttributeValue(name='DW_AT_low_pc', form='DW_FORM_addr', value=4195830, raw_value=4195830, offset=1038)), ('DW_AT_high_pc', AttributeValue(name='DW_AT_high_pc', form='DW_FORM_data8', value=7, raw_value=7, offset=1046)), ('DW_AT_frame_base', AttributeValue(name='DW_AT_frame_base', form='DW_FORM_exprloc', value=[156], raw_value=[156], offset=1054)), ('DW_AT_GNU_all_call_sites', AttributeValue(name='DW_AT_GNU_all_call_sites', form='DW_FORM_flag_present', value='', raw_value='', offset=1056))])
+
+
+## DIE -----------------------
+DIE None, size=1, has_children=None
+
+### dir(die) -----------------------
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_children', '_parent', '_parse_DIE', '_translate_attr_value', 'abbrev_code', 'add_child', 'attributes', 'cu', 'dwarfinfo', 'get_full_path', 'get_parent', 'has_children', 'is_null', 'iter_children', 'iter_siblings', 'offset', 'set_parent', 'size', 'stream', 'tag']
+
+
+### die.tag --------------------------
+None
+
+
+### die.attributes ------------------------ 
+OrderedDict()
+
+
