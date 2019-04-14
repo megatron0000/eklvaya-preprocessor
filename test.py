@@ -9,26 +9,29 @@ from capstone import *
 sys.path[0:0] = ['.', '..']
 
 
-def get_dwarfinfo(file_name):
-    with open(file_name, 'rb') as f:
-        elffile = ELFFile(f)
-        dwarfinfo = elffile.get_dwarf_info()
-        get_text_disassemble(elffile)
-        return dwarfinfo
+def get_ELFFile(file_name):
+    f = open(file_name, 'rb')
+    return ELFFile(f)
+
+
+def get_dwarfinfo(elffile):
+    return elffile.get_dwarf_info()
 
 
 def print_debug(file_name):
-    dwarfinfo = get_dwarfinfo(file_name)
+    elffile = get_ELFFile(file_name)
+    dwarfinfo = get_dwarfinfo(elffile)
     diedict = get_offset2DIE(dwarfinfo)
-    print(dir(dwarfinfo))
-    print(dir(dwarfinfo.structs))
+    disassemble = get_text_disassemble(elffile)
+    # print(dir(dwarfinfo))
+    # print(dir(dwarfinfo.structs))
     for compile_unit in dwarfinfo.iter_CUs():
         print('# CU ------------------------------')
         for die in compile_unit.iter_DIEs():
             # print('At offset ' + str(die.offset) + ':')
             if (die.tag == 'DW_TAG_subprogram'):
-                print(dir(die.dwarfinfo))
-                print(get_subprogram(die, diedict))
+                # print(dir(die.dwarfinfo))
+                print(get_subprogram(die, diedict, disassemble))
 
 
 def get_offset2DIE(dwarfinfo):
@@ -103,7 +106,7 @@ def get_type(die, diedict):
         return typedict['base_name'] + '*'*typedict['pointer_level']
 
 
-def get_subprogram(die, diedict):
+def get_subprogram(die, diedict, disassemble):
     """
     'diedict' is a mapping from offset -> DIE (obtained with 'get_offset2DIE')
     """
@@ -130,6 +133,14 @@ def get_subprogram(die, diedict):
             subroutine['num_args'] += 1
             subroutine['args_type'].append(get_type(parameter_die, diedict))
 
+    subroutine['inst_strings'] = []
+    subroutine['inst_bytes'] = []
+    for inst in disassemble:
+        if inst.address >= lowpc and inst.address <= highpc:
+            subroutine['inst_strings'].append(
+                inst.mnemonic + ' ' + inst.op_str)
+            subroutine['inst_bytes'].append(inst.bytes)
+
     return subroutine
 
 
@@ -138,11 +149,7 @@ def get_text_disassemble(elffile):
     ops = code.data()
     addr = code['sh_addr']
     md = md = Cs(CS_ARCH_X86, CS_MODE_64)
-    for i in md.disasm(ops, addr):
-        bytes = []
-        for byte in i.bytes:
-            bytes.append(int(byte))
-        print('0x{0:x}:\t{1}\t{2}\t{2}'.format(i.address, bytes, i.mnemonic, i.op_str))
+    return [i for i in md.disasm(ops, addr)]
 
 
 if __name__ == '__main__':
