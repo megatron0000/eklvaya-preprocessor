@@ -1,0 +1,12033 @@
+{
+  "zram_control_remove": {
+    "ret_type": "int",
+    "args_type": [
+      "struct zram*"
+    ],
+    "inst_bytes": [
+      [
+        85
+      ],
+      [
+        137,
+        229
+      ],
+      [
+        131,
+        236,
+        56
+      ],
+      [
+        139,
+        69,
+        8
+      ],
+      [
+        137,
+        69,
+        212
+      ],
+      [
+        101,
+        161,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        137,
+        69,
+        244
+      ],
+      [
+        49,
+        192
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        212
+      ],
+      [
+        232,
+        35,
+        255,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        117,
+        7
+      ],
+      [
+        184,
+        218,
+        255,
+        255,
+        255
+      ],
+      [
+        235,
+        70
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        212
+      ],
+      [
+        232,
+        177,
+        251,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        69,
+        228
+      ],
+      [
+        131,
+        125,
+        228,
+        0
+      ],
+      [
+        121,
+        5
+      ],
+      [
+        139,
+        69,
+        228
+      ],
+      [
+        235,
+        42
+      ],
+      [
+        255,
+        117,
+        228
+      ],
+      [
+        104,
+        240,
+        154,
+        5,
+        8
+      ],
+      [
+        106,
+        11
+      ],
+      [
+        141,
+        69,
+        233
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        29,
+        242,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        104,
+        244,
+        154,
+        5,
+        8
+      ],
+      [
+        141,
+        69,
+        233
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        8,
+        34,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        139,
+        85,
+        244
+      ],
+      [
+        101,
+        51,
+        21,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        116,
+        5
+      ],
+      [
+        232,
+        181,
+        238,
+        255,
+        255
+      ],
+      [
+        201
+      ],
+      [
+        195
+      ]
+    ],
+    "boundaries": [
+      134523140,
+      134523277
+    ],
+    "num_args": 1,
+    "inst_strings": [
+      "push ebp",
+      "mov ebp, esp",
+      "sub esp, 0x38",
+      "mov eax, dword ptr [ebp + 8]",
+      "mov dword ptr [ebp - 0x2c], eax",
+      "mov eax, dword ptr gs:[0x14]",
+      "mov dword ptr [ebp - 0xc], eax",
+      "xor eax, eax",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x2c]",
+      "call zram_has_control",
+      "add esp, 0x10",
+      "test eax, eax",
+      "jne 0x30",
+      "mov eax, 0xffffffda",
+      "jmp 0x76",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x2c]",
+      "call zram_get_devnum",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x1c], eax",
+      "cmp dword ptr [ebp - 0x1c], 0",
+      "jns 0x4c",
+      "mov eax, dword ptr [ebp - 0x1c]",
+      "jmp 0x76",
+      "push dword ptr [ebp - 0x1c]",
+      "push 0x8059af0",
+      "push 0xb",
+      "lea eax, dword ptr [ebp - 0x17]",
+      "push eax",
+      "call snprintf",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push 0x8059af4",
+      "lea eax, dword ptr [ebp - 0x17]",
+      "push eax",
+      "call path_write_str",
+      "add esp, 0x10",
+      "mov edx, dword ptr [ebp - 0xc]",
+      "xor edx, dword ptr gs:[0x14]",
+      "je 0x87",
+      "call __stack_chk_fail",
+      "leave",
+      "ret"
+    ]
+  },
+  "status": {
+    "ret_type": "void",
+    "args_type": [
+      "struct zram*"
+    ],
+    "inst_bytes": [
+      [
+        85
+      ],
+      [
+        137,
+        229
+      ],
+      [
+        131,
+        236,
+        24
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        106,
+        0
+      ],
+      [
+        232,
+        242,
+        237,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        232,
+        234,
+        232,
+        255,
+        255
+      ],
+      [
+        137,
+        69,
+        240
+      ],
+      [
+        131,
+        125,
+        240,
+        0
+      ],
+      [
+        117,
+        27
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        232,
+        155,
+        5,
+        8
+      ],
+      [
+        232,
+        244,
+        233,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        232,
+        22,
+        232,
+        255,
+        255
+      ],
+      [
+        161,
+        12,
+        3,
+        6,
+        8
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        255,
+        117,
+        240
+      ],
+      [
+        232,
+        21,
+        231,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        161,
+        16,
+        3,
+        6,
+        8
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        255,
+        117,
+        240
+      ],
+      [
+        232,
+        97,
+        230,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        199,
+        69,
+        236,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        235,
+        93
+      ],
+      [
+        139,
+        69,
+        236
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        215,
+        242,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        69,
+        244
+      ],
+      [
+        139,
+        69,
+        244
+      ],
+      [
+        139,
+        80,
+        12
+      ],
+      [
+        139,
+        69,
+        244
+      ],
+      [
+        221,
+        64,
+        4
+      ],
+      [
+        139,
+        69,
+        244
+      ],
+      [
+        139,
+        0
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        82
+      ],
+      [
+        141,
+        100,
+        36,
+        248
+      ],
+      [
+        221,
+        28,
+        36
+      ],
+      [
+        80
+      ],
+      [
+        255,
+        117,
+        240
+      ],
+      [
+        232,
+        46,
+        230,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        32
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        117,
+        27
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        12,
+        156,
+        5,
+        8
+      ],
+      [
+        232,
+        106,
+        233,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        232,
+        140,
+        231,
+        255,
+        255
+      ],
+      [
+        131,
+        69,
+        236,
+        1
+      ],
+      [
+        161,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        57,
+        69,
+        236
+      ],
+      [
+        114,
+        153
+      ],
+      [
+        131,
+        125,
+        8,
+        0
+      ],
+      [
+        116,
+        19
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        255,
+        117,
+        240
+      ],
+      [
+        232,
+        15,
+        251,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        235,
+        116
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        106,
+        0
+      ],
+      [
+        232,
+        43,
+        244,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        69,
+        8
+      ],
+      [
+        199,
+        69,
+        236,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        255,
+        117,
+        236
+      ],
+      [
+        106,
+        0
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        232,
+        29,
+        243,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        232,
+        154,
+        245,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        116,
+        41
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        232,
+        99,
+        246,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        116,
+        17
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        255,
+        117,
+        240
+      ],
+      [
+        232,
+        174,
+        250,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        69,
+        236,
+        1
+      ],
+      [
+        235,
+        178
+      ],
+      [
+        144
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        232,
+        250,
+        243,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        240
+      ],
+      [
+        232,
+        38,
+        235,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        240
+      ],
+      [
+        232,
+        88,
+        232,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        144
+      ],
+      [
+        201
+      ],
+      [
+        195
+      ]
+    ],
+    "boundaries": [
+      134524990,
+      134525374
+    ],
+    "num_args": 1,
+    "inst_strings": [
+      "push ebp",
+      "mov ebp, esp",
+      "sub esp, 0x18",
+      "sub esp, 0xc",
+      "push 0",
+      "call scols_init_debug",
+      "add esp, 0x10",
+      "call scols_new_table",
+      "mov dword ptr [ebp - 0x10], eax",
+      "cmp dword ptr [ebp - 0x10], 0",
+      "jne 0x3c",
+      "sub esp, 0xc",
+      "push 0x8059be8",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push eax",
+      "push 1",
+      "call err",
+      "mov eax, dword ptr [0x806030c]",
+      "sub esp, 8",
+      "push eax",
+      "push dword ptr [ebp - 0x10]",
+      "call scols_table_enable_raw",
+      "add esp, 0x10",
+      "mov eax, dword ptr [0x8060310]",
+      "sub esp, 8",
+      "push eax",
+      "push dword ptr [ebp - 0x10]",
+      "call scols_table_enable_noheadings",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x14], 0",
+      "jmp 0xca",
+      "mov eax, dword ptr [ebp - 0x14]",
+      "sub esp, 0xc",
+      "push eax",
+      "call get_column_info",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0xc], eax",
+      "mov eax, dword ptr [ebp - 0xc]",
+      "mov edx, dword ptr [eax + 0xc]",
+      "mov eax, dword ptr [ebp - 0xc]",
+      "fld qword ptr [eax + 4]",
+      "mov eax, dword ptr [ebp - 0xc]",
+      "mov eax, dword ptr [eax]",
+      "sub esp, 0xc",
+      "push edx",
+      "lea esp, dword ptr [esp - 8]",
+      "fstp qword ptr [esp]",
+      "push eax",
+      "push dword ptr [ebp - 0x10]",
+      "call scols_table_new_column",
+      "add esp, 0x20",
+      "test eax, eax",
+      "jne 0xc6",
+      "sub esp, 0xc",
+      "push 0x8059c0c",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push eax",
+      "push 1",
+      "call err",
+      "add dword ptr [ebp - 0x14], 1",
+      "mov eax, dword ptr [0x8060308]",
+      "cmp dword ptr [ebp - 0x14], eax",
+      "jb 0x6d",
+      "cmp dword ptr [ebp + 8], 0",
+      "je 0xed",
+      "sub esp, 8",
+      "push dword ptr [ebp + 8]",
+      "push dword ptr [ebp - 0x10]",
+      "call fill_table_row",
+      "add esp, 0x10",
+      "jmp 0x161",
+      "sub esp, 0xc",
+      "push 0",
+      "call new_zram",
+      "add esp, 0x10",
+      "mov dword ptr [ebp + 8], eax",
+      "mov dword ptr [ebp - 0x14], 0",
+      "sub esp, 4",
+      "push dword ptr [ebp - 0x14]",
+      "push 0",
+      "push dword ptr [ebp + 8]",
+      "call zram_set_devname",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push dword ptr [ebp + 8]",
+      "call zram_exist",
+      "add esp, 0x10",
+      "test eax, eax",
+      "je 0x152",
+      "sub esp, 0xc",
+      "push dword ptr [ebp + 8]",
+      "call zram_used",
+      "add esp, 0x10",
+      "test eax, eax",
+      "je 0x14c",
+      "sub esp, 8",
+      "push dword ptr [ebp + 8]",
+      "push dword ptr [ebp - 0x10]",
+      "call fill_table_row",
+      "add esp, 0x10",
+      "add dword ptr [ebp - 0x14], 1",
+      "jmp 0x104",
+      "nop",
+      "sub esp, 0xc",
+      "push dword ptr [ebp + 8]",
+      "call free_zram",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x10]",
+      "call scols_print_table",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x10]",
+      "call scols_unref_table",
+      "add esp, 0x10",
+      "nop",
+      "leave",
+      "ret"
+    ]
+  },
+  "zram_exist": {
+    "ret_type": "int",
+    "args_type": [
+      "struct zram*"
+    ],
+    "inst_bytes": [
+      [
+        85
+      ],
+      [
+        137,
+        229
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        131,
+        125,
+        8,
+        0
+      ],
+      [
+        117,
+        25
+      ],
+      [
+        104,
+        180,
+        162,
+        5,
+        8
+      ],
+      [
+        104,
+        231,
+        0,
+        0,
+        0
+      ],
+      [
+        104,
+        45,
+        154,
+        5,
+        8
+      ],
+      [
+        104,
+        138,
+        154,
+        5,
+        8
+      ],
+      [
+        232,
+        17,
+        247,
+        255,
+        255
+      ],
+      [
+        232,
+        124,
+        244,
+        255,
+        255
+      ],
+      [
+        199,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        232,
+        160,
+        254,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        117,
+        18
+      ],
+      [
+        232,
+        95,
+        244,
+        255,
+        255
+      ],
+      [
+        199,
+        0,
+        19,
+        0,
+        0,
+        0
+      ],
+      [
+        184,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        235,
+        5
+      ],
+      [
+        184,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        201
+      ],
+      [
+        195
+      ]
+    ],
+    "boundaries": [
+      134522618,
+      134522709
+    ],
+    "num_args": 1,
+    "inst_strings": [
+      "push ebp",
+      "mov ebp, esp",
+      "sub esp, 8",
+      "cmp dword ptr [ebp + 8], 0",
+      "jne 0x25",
+      "push 0x805a2b4",
+      "push 0xe7",
+      "push 0x8059a2d",
+      "push 0x8059a8a",
+      "call __assert_fail",
+      "call __errno_location",
+      "mov dword ptr [eax], 0",
+      "sub esp, 0xc",
+      "push dword ptr [ebp + 8]",
+      "call zram_get_sysfs",
+      "add esp, 0x10",
+      "test eax, eax",
+      "jne 0x54",
+      "call __errno_location",
+      "mov dword ptr [eax], 0x13",
+      "mov eax, 0",
+      "jmp 0x59",
+      "mov eax, 1",
+      "leave",
+      "ret"
+    ]
+  },
+  "zram_has_control": {
+    "ret_type": "int",
+    "args_type": [
+      "struct zram*"
+    ],
+    "inst_bytes": [
+      [
+        85
+      ],
+      [
+        137,
+        229
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        139,
+        69,
+        8
+      ],
+      [
+        15,
+        182,
+        64,
+        76
+      ],
+      [
+        131,
+        224,
+        2
+      ],
+      [
+        132,
+        192
+      ],
+      [
+        117,
+        61
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        106,
+        0
+      ],
+      [
+        104,
+        182,
+        154,
+        5,
+        8
+      ],
+      [
+        232,
+        212,
+        243,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        15,
+        148,
+        194
+      ],
+      [
+        139,
+        69,
+        8
+      ],
+      [
+        131,
+        226,
+        1
+      ],
+      [
+        141,
+        12,
+        149,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        15,
+        182,
+        80,
+        76
+      ],
+      [
+        131,
+        226,
+        251
+      ],
+      [
+        9,
+        202
+      ],
+      [
+        136,
+        80,
+        76
+      ],
+      [
+        139,
+        69,
+        8
+      ],
+      [
+        15,
+        182,
+        80,
+        76
+      ],
+      [
+        131,
+        202,
+        2
+      ],
+      [
+        136,
+        80,
+        76
+      ],
+      [
+        139,
+        69,
+        8
+      ],
+      [
+        15,
+        182,
+        64,
+        76
+      ],
+      [
+        192,
+        232,
+        2
+      ],
+      [
+        131,
+        224,
+        1
+      ],
+      [
+        15,
+        182,
+        192
+      ],
+      [
+        201
+      ],
+      [
+        195
+      ]
+    ],
+    "boundaries": [
+      134522953,
+      134523052
+    ],
+    "num_args": 1,
+    "inst_strings": [
+      "push ebp",
+      "mov ebp, esp",
+      "sub esp, 8",
+      "mov eax, dword ptr [ebp + 8]",
+      "movzx eax, byte ptr [eax + 0x4c]",
+      "and eax, 2",
+      "test al, al",
+      "jne 0x51",
+      "sub esp, 8",
+      "push 0",
+      "push 0x8059ab6",
+      "call access",
+      "add esp, 0x10",
+      "test eax, eax",
+      "sete dl",
+      "mov eax, dword ptr [ebp + 8]",
+      "and edx, 1",
+      "lea ecx, dword ptr [edx*4]",
+      "movzx edx, byte ptr [eax + 0x4c]",
+      "and edx, 0xfffffffb",
+      "or edx, ecx",
+      "mov byte ptr [eax + 0x4c], dl",
+      "mov eax, dword ptr [ebp + 8]",
+      "movzx edx, byte ptr [eax + 0x4c]",
+      "or edx, 2",
+      "mov byte ptr [eax + 0x4c], dl",
+      "mov eax, dword ptr [ebp + 8]",
+      "movzx eax, byte ptr [eax + 0x4c]",
+      "shr al, 2",
+      "and eax, 1",
+      "movzx eax, al",
+      "leave",
+      "ret"
+    ]
+  },
+  "zram_used": {
+    "ret_type": "int",
+    "args_type": [
+      "struct zram*"
+    ],
+    "inst_bytes": [
+      [
+        85
+      ],
+      [
+        137,
+        229
+      ],
+      [
+        131,
+        236,
+        56
+      ],
+      [
+        139,
+        69,
+        8
+      ],
+      [
+        137,
+        69,
+        212
+      ],
+      [
+        101,
+        161,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        137,
+        69,
+        244
+      ],
+      [
+        49,
+        192
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        212
+      ],
+      [
+        232,
+        222,
+        253,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        69,
+        228
+      ],
+      [
+        131,
+        125,
+        228,
+        0
+      ],
+      [
+        116,
+        46
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        141,
+        69,
+        232
+      ],
+      [
+        80
+      ],
+      [
+        104,
+        173,
+        154,
+        5,
+        8
+      ],
+      [
+        255,
+        117,
+        228
+      ],
+      [
+        232,
+        123,
+        193,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        117,
+        19
+      ],
+      [
+        139,
+        69,
+        232
+      ],
+      [
+        139,
+        85,
+        236
+      ],
+      [
+        9,
+        208
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        116,
+        7
+      ],
+      [
+        184,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        235,
+        5
+      ],
+      [
+        184,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        139,
+        85,
+        244
+      ],
+      [
+        101,
+        51,
+        21,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        116,
+        5
+      ],
+      [
+        232,
+        249,
+        239,
+        255,
+        255
+      ],
+      [
+        201
+      ],
+      [
+        195
+      ]
+    ],
+    "boundaries": [
+      134522837,
+      134522953
+    ],
+    "num_args": 1,
+    "inst_strings": [
+      "push ebp",
+      "mov ebp, esp",
+      "sub esp, 0x38",
+      "mov eax, dword ptr [ebp + 8]",
+      "mov dword ptr [ebp - 0x2c], eax",
+      "mov eax, dword ptr gs:[0x14]",
+      "mov dword ptr [ebp - 0xc], eax",
+      "xor eax, eax",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x2c]",
+      "call zram_get_sysfs",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x1c], eax",
+      "cmp dword ptr [ebp - 0x1c], 0",
+      "je 0x5c",
+      "sub esp, 4",
+      "lea eax, dword ptr [ebp - 0x18]",
+      "push eax",
+      "push 0x8059aad",
+      "push dword ptr [ebp - 0x1c]",
+      "call sysfs_read_u64",
+      "add esp, 0x10",
+      "test eax, eax",
+      "jne 0x5c",
+      "mov eax, dword ptr [ebp - 0x18]",
+      "mov edx, dword ptr [ebp - 0x14]",
+      "or eax, edx",
+      "test eax, eax",
+      "je 0x5c",
+      "mov eax, 1",
+      "jmp 0x61",
+      "mov eax, 0",
+      "mov edx, dword ptr [ebp - 0xc]",
+      "xor edx, dword ptr gs:[0x14]",
+      "je 0x72",
+      "call __stack_chk_fail",
+      "leave",
+      "ret"
+    ]
+  },
+  "zram_reset_stat": {
+    "ret_type": "void",
+    "args_type": [
+      "struct zram*"
+    ],
+    "inst_bytes": [
+      [
+        85
+      ],
+      [
+        137,
+        229
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        131,
+        125,
+        8,
+        0
+      ],
+      [
+        116,
+        41
+      ],
+      [
+        139,
+        69,
+        8
+      ],
+      [
+        139,
+        64,
+        72
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        91,
+        77,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        139,
+        69,
+        8
+      ],
+      [
+        199,
+        64,
+        72,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        139,
+        69,
+        8
+      ],
+      [
+        15,
+        182,
+        80,
+        76
+      ],
+      [
+        131,
+        226,
+        254
+      ],
+      [
+        136,
+        80,
+        76
+      ],
+      [
+        144
+      ],
+      [
+        201
+      ],
+      [
+        195
+      ]
+    ],
+    "boundaries": [
+      134521911,
+      134521967
+    ],
+    "num_args": 1,
+    "inst_strings": [
+      "push ebp",
+      "mov ebp, esp",
+      "sub esp, 8",
+      "cmp dword ptr [ebp + 8], 0",
+      "je 0x35",
+      "mov eax, dword ptr [ebp + 8]",
+      "mov eax, dword ptr [eax + 0x48]",
+      "sub esp, 0xc",
+      "push eax",
+      "call strv_free",
+      "add esp, 0x10",
+      "mov eax, dword ptr [ebp + 8]",
+      "mov dword ptr [eax + 0x48], 0",
+      "mov eax, dword ptr [ebp + 8]",
+      "movzx edx, byte ptr [eax + 0x4c]",
+      "and edx, 0xfffffffe",
+      "mov byte ptr [eax + 0x4c], dl",
+      "nop",
+      "leave",
+      "ret"
+    ]
+  },
+  "get_mm_stat": {
+    "ret_type": "char*",
+    "args_type": [
+      "struct zram*",
+      "unsigned int",
+      "int"
+    ],
+    "inst_bytes": [
+      [
+        85
+      ],
+      [
+        137,
+        229
+      ],
+      [
+        131,
+        236,
+        56
+      ],
+      [
+        139,
+        69,
+        8
+      ],
+      [
+        137,
+        69,
+        212
+      ],
+      [
+        101,
+        161,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        137,
+        69,
+        244
+      ],
+      [
+        49,
+        192
+      ],
+      [
+        131,
+        125,
+        12,
+        6
+      ],
+      [
+        118,
+        25
+      ],
+      [
+        104,
+        192,
+        162,
+        5,
+        8
+      ],
+      [
+        104,
+        92,
+        1,
+        0,
+        0
+      ],
+      [
+        104,
+        45,
+        154,
+        5,
+        8
+      ],
+      [
+        104,
+        24,
+        155,
+        5,
+        8
+      ],
+      [
+        232,
+        202,
+        243,
+        255,
+        255
+      ],
+      [
+        131,
+        125,
+        212,
+        0
+      ],
+      [
+        117,
+        25
+      ],
+      [
+        104,
+        192,
+        162,
+        5,
+        8
+      ],
+      [
+        104,
+        93,
+        1,
+        0,
+        0
+      ],
+      [
+        104,
+        45,
+        154,
+        5,
+        8
+      ],
+      [
+        104,
+        138,
+        154,
+        5,
+        8
+      ],
+      [
+        232,
+        171,
+        243,
+        255,
+        255
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        212
+      ],
+      [
+        232,
+        69,
+        251,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        69,
+        220
+      ],
+      [
+        131,
+        125,
+        220,
+        0
+      ],
+      [
+        117,
+        10
+      ],
+      [
+        184,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        233,
+        124,
+        1,
+        0,
+        0
+      ],
+      [
+        139,
+        69,
+        212
+      ],
+      [
+        139,
+        64,
+        72
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        15,
+        133,
+        150,
+        0,
+        0,
+        0
+      ],
+      [
+        139,
+        69,
+        212
+      ],
+      [
+        15,
+        182,
+        64,
+        76
+      ],
+      [
+        131,
+        224,
+        1
+      ],
+      [
+        132,
+        192
+      ],
+      [
+        15,
+        133,
+        132,
+        0,
+        0,
+        0
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        104,
+        56,
+        155,
+        5,
+        8
+      ],
+      [
+        255,
+        117,
+        220
+      ],
+      [
+        232,
+        105,
+        193,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        69,
+        224
+      ],
+      [
+        131,
+        125,
+        224,
+        0
+      ],
+      [
+        116,
+        77
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        104,
+        64,
+        155,
+        5,
+        8
+      ],
+      [
+        255,
+        117,
+        224
+      ],
+      [
+        232,
+        147,
+        74,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        194
+      ],
+      [
+        139,
+        69,
+        212
+      ],
+      [
+        137,
+        80,
+        72
+      ],
+      [
+        139,
+        69,
+        212
+      ],
+      [
+        139,
+        64,
+        72
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        129,
+        71,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        248,
+        6
+      ],
+      [
+        119,
+        27
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        66,
+        155,
+        5,
+        8
+      ],
+      [
+        232,
+        63,
+        239,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        232,
+        113,
+        241,
+        255,
+        255
+      ],
+      [
+        139,
+        69,
+        212
+      ],
+      [
+        15,
+        182,
+        80,
+        76
+      ],
+      [
+        131,
+        202,
+        1
+      ],
+      [
+        136,
+        80,
+        76
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        224
+      ],
+      [
+        232,
+        25,
+        236,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        139,
+        69,
+        212
+      ],
+      [
+        139,
+        64,
+        72
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        116,
+        115
+      ],
+      [
+        131,
+        125,
+        16,
+        0
+      ],
+      [
+        116,
+        33
+      ],
+      [
+        139,
+        69,
+        212
+      ],
+      [
+        139,
+        64,
+        72
+      ],
+      [
+        139,
+        85,
+        12
+      ],
+      [
+        193,
+        226,
+        2
+      ],
+      [
+        1,
+        208
+      ],
+      [
+        139,
+        0
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        141,
+        245,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        233,
+        167,
+        0,
+        0,
+        0
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        66,
+        155,
+        5,
+        8
+      ],
+      [
+        232,
+        216,
+        238,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        193
+      ],
+      [
+        139,
+        69,
+        212
+      ],
+      [
+        139,
+        64,
+        72
+      ],
+      [
+        139,
+        85,
+        12
+      ],
+      [
+        193,
+        226,
+        2
+      ],
+      [
+        1,
+        208
+      ],
+      [
+        139,
+        0
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        81
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        88,
+        47,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        69,
+        232
+      ],
+      [
+        137,
+        85,
+        236
+      ],
+      [
+        139,
+        69,
+        232
+      ],
+      [
+        139,
+        85,
+        236
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        82
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        0
+      ],
+      [
+        232,
+        163,
+        54,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        235,
+        91
+      ],
+      [
+        139,
+        69,
+        12
+      ],
+      [
+        139,
+        4,
+        133,
+        160,
+        2,
+        6,
+        8
+      ],
+      [
+        137,
+        69,
+        228
+      ],
+      [
+        131,
+        125,
+        16,
+        0
+      ],
+      [
+        116,
+        19
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        255,
+        117,
+        228
+      ],
+      [
+        255,
+        117,
+        220
+      ],
+      [
+        232,
+        87,
+        192,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        235,
+        53
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        141,
+        69,
+        232
+      ],
+      [
+        80
+      ],
+      [
+        255,
+        117,
+        228
+      ],
+      [
+        255,
+        117,
+        220
+      ],
+      [
+        232,
+        147,
+        189,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        117,
+        23
+      ],
+      [
+        139,
+        69,
+        232
+      ],
+      [
+        139,
+        85,
+        236
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        82
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        0
+      ],
+      [
+        232,
+        77,
+        54,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        235,
+        5
+      ],
+      [
+        184,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        139,
+        77,
+        244
+      ],
+      [
+        101,
+        51,
+        13,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        116,
+        5
+      ],
+      [
+        232,
+        13,
+        236,
+        255,
+        255
+      ],
+      [
+        201
+      ],
+      [
+        195
+      ]
+    ],
+    "boundaries": [
+      134523440,
+      134523957
+    ],
+    "num_args": 3,
+    "inst_strings": [
+      "push ebp",
+      "mov ebp, esp",
+      "sub esp, 0x38",
+      "mov eax, dword ptr [ebp + 8]",
+      "mov dword ptr [ebp - 0x2c], eax",
+      "mov eax, dword ptr gs:[0x14]",
+      "mov dword ptr [ebp - 0xc], eax",
+      "xor eax, eax",
+      "cmp dword ptr [ebp + 0xc], 6",
+      "jbe 0x36",
+      "push 0x805a2c0",
+      "push 0x15c",
+      "push 0x8059a2d",
+      "push 0x8059b18",
+      "call __assert_fail",
+      "cmp dword ptr [ebp - 0x2c], 0",
+      "jne 0x55",
+      "push 0x805a2c0",
+      "push 0x15d",
+      "push 0x8059a2d",
+      "push 0x8059a8a",
+      "call __assert_fail",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x2c]",
+      "call zram_get_sysfs",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x24], eax",
+      "cmp dword ptr [ebp - 0x24], 0",
+      "jne 0x76",
+      "mov eax, 0",
+      "jmp 0x1f2",
+      "mov eax, dword ptr [ebp - 0x2c]",
+      "mov eax, dword ptr [eax + 0x48]",
+      "test eax, eax",
+      "jne 0x11a",
+      "mov eax, dword ptr [ebp - 0x2c]",
+      "movzx eax, byte ptr [eax + 0x4c]",
+      "and eax, 1",
+      "test al, al",
+      "jne 0x11a",
+      "sub esp, 8",
+      "push 0x8059b38",
+      "push dword ptr [ebp - 0x24]",
+      "call sysfs_strdup",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x20], eax",
+      "cmp dword ptr [ebp - 0x20], 0",
+      "je 0xff",
+      "sub esp, 8",
+      "push 0x8059b40",
+      "push dword ptr [ebp - 0x20]",
+      "call strv_split",
+      "add esp, 0x10",
+      "mov edx, eax",
+      "mov eax, dword ptr [ebp - 0x2c]",
+      "mov dword ptr [eax + 0x48], edx",
+      "mov eax, dword ptr [ebp - 0x2c]",
+      "mov eax, dword ptr [eax + 0x48]",
+      "sub esp, 0xc",
+      "push eax",
+      "call strv_length",
+      "add esp, 0x10",
+      "cmp eax, 6",
+      "ja 0xff",
+      "sub esp, 0xc",
+      "push 0x8059b42",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push eax",
+      "push 1",
+      "call errx",
+      "mov eax, dword ptr [ebp - 0x2c]",
+      "movzx edx, byte ptr [eax + 0x4c]",
+      "or edx, 1",
+      "mov byte ptr [eax + 0x4c], dl",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x20]",
+      "call free",
+      "add esp, 0x10",
+      "mov eax, dword ptr [ebp - 0x2c]",
+      "mov eax, dword ptr [eax + 0x48]",
+      "test eax, eax",
+      "je 0x197",
+      "cmp dword ptr [ebp + 0x10], 0",
+      "je 0x14b",
+      "mov eax, dword ptr [ebp - 0x2c]",
+      "mov eax, dword ptr [eax + 0x48]",
+      "mov edx, dword ptr [ebp + 0xc]",
+      "shl edx, 2",
+      "add eax, edx",
+      "mov eax, dword ptr [eax]",
+      "sub esp, 0xc",
+      "push eax",
+      "call xstrdup",
+      "add esp, 0x10",
+      "jmp 0x1f2",
+      "sub esp, 0xc",
+      "push 0x8059b42",
+      "call gettext",
+      "add esp, 0x10",
+      "mov ecx, eax",
+      "mov eax, dword ptr [ebp - 0x2c]",
+      "mov eax, dword ptr [eax + 0x48]",
+      "mov edx, dword ptr [ebp + 0xc]",
+      "shl edx, 2",
+      "add eax, edx",
+      "mov eax, dword ptr [eax]",
+      "sub esp, 8",
+      "push ecx",
+      "push eax",
+      "call strtou64_or_err",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x18], eax",
+      "mov dword ptr [ebp - 0x14], edx",
+      "mov eax, dword ptr [ebp - 0x18]",
+      "mov edx, dword ptr [ebp - 0x14]",
+      "sub esp, 4",
+      "push edx",
+      "push eax",
+      "push 0",
+      "call size_to_human_string",
+      "add esp, 0x10",
+      "jmp 0x1f2",
+      "mov eax, dword ptr [ebp + 0xc]",
+      "mov eax, dword ptr [eax*4 + 0x80602a0]",
+      "mov dword ptr [ebp - 0x1c], eax",
+      "cmp dword ptr [ebp + 0x10], 0",
+      "je 0x1bd",
+      "sub esp, 8",
+      "push dword ptr [ebp - 0x1c]",
+      "push dword ptr [ebp - 0x24]",
+      "call sysfs_strdup",
+      "add esp, 0x10",
+      "jmp 0x1f2",
+      "sub esp, 4",
+      "lea eax, dword ptr [ebp - 0x18]",
+      "push eax",
+      "push dword ptr [ebp - 0x1c]",
+      "push dword ptr [ebp - 0x24]",
+      "call sysfs_read_u64",
+      "add esp, 0x10",
+      "test eax, eax",
+      "jne 0x1ed",
+      "mov eax, dword ptr [ebp - 0x18]",
+      "mov edx, dword ptr [ebp - 0x14]",
+      "sub esp, 4",
+      "push edx",
+      "push eax",
+      "push 0",
+      "call size_to_human_string",
+      "add esp, 0x10",
+      "jmp 0x1f2",
+      "mov eax, 0",
+      "mov ecx, dword ptr [ebp - 0xc]",
+      "xor ecx, dword ptr gs:[0x14]",
+      "je 0x203",
+      "call __stack_chk_fail",
+      "leave",
+      "ret"
+    ]
+  },
+  "zram_get_sysfs": {
+    "ret_type": "struct sysfs_cxt*",
+    "args_type": [
+      "struct zram*"
+    ],
+    "inst_bytes": [
+      [
+        85
+      ],
+      [
+        137,
+        229
+      ],
+      [
+        129,
+        236,
+        40,
+        16,
+        0,
+        0
+      ],
+      [
+        139,
+        69,
+        8
+      ],
+      [
+        137,
+        133,
+        228,
+        239,
+        255,
+        255
+      ],
+      [
+        101,
+        161,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        137,
+        69,
+        244
+      ],
+      [
+        49,
+        192
+      ],
+      [
+        131,
+        189,
+        228,
+        239,
+        255,
+        255,
+        0
+      ],
+      [
+        117,
+        25
+      ],
+      [
+        104,
+        164,
+        162,
+        5,
+        8
+      ],
+      [
+        104,
+        210,
+        0,
+        0,
+        0
+      ],
+      [
+        104,
+        45,
+        154,
+        5,
+        8
+      ],
+      [
+        104,
+        138,
+        154,
+        5,
+        8
+      ],
+      [
+        232,
+        28,
+        248,
+        255,
+        255
+      ],
+      [
+        139,
+        133,
+        228,
+        239,
+        255,
+        255
+      ],
+      [
+        139,
+        80,
+        36
+      ],
+      [
+        139,
+        64,
+        32
+      ],
+      [
+        9,
+        208
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        15,
+        133,
+        180,
+        0,
+        0,
+        0
+      ],
+      [
+        139,
+        133,
+        228,
+        239,
+        255,
+        255
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        106,
+        0
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        3,
+        180,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        133,
+        232,
+        239,
+        255,
+        255
+      ],
+      [
+        137,
+        149,
+        236,
+        239,
+        255,
+        255
+      ],
+      [
+        139,
+        133,
+        236,
+        239,
+        255,
+        255
+      ],
+      [
+        11,
+        133,
+        232,
+        239,
+        255,
+        255
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        117,
+        10
+      ],
+      [
+        184,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        233,
+        131,
+        0,
+        0,
+        0
+      ],
+      [
+        139,
+        133,
+        228,
+        239,
+        255,
+        255
+      ],
+      [
+        131,
+        192,
+        32
+      ],
+      [
+        106,
+        0
+      ],
+      [
+        255,
+        181,
+        236,
+        239,
+        255,
+        255
+      ],
+      [
+        255,
+        181,
+        232,
+        239,
+        255,
+        255
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        216,
+        184,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        116,
+        7
+      ],
+      [
+        184,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        235,
+        88
+      ],
+      [
+        139,
+        133,
+        228,
+        239,
+        255,
+        255
+      ],
+      [
+        15,
+        182,
+        0
+      ],
+      [
+        60,
+        47
+      ],
+      [
+        116,
+        66
+      ],
+      [
+        139,
+        133,
+        228,
+        239,
+        255,
+        255
+      ],
+      [
+        141,
+        80,
+        32
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        104,
+        0,
+        16,
+        0,
+        0
+      ],
+      [
+        141,
+        133,
+        244,
+        239,
+        255,
+        255
+      ],
+      [
+        80
+      ],
+      [
+        82
+      ],
+      [
+        232,
+        159,
+        199,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        116,
+        29
+      ],
+      [
+        139,
+        133,
+        228,
+        239,
+        255,
+        255
+      ],
+      [
+        141,
+        149,
+        244,
+        239,
+        255,
+        255
+      ],
+      [
+        82
+      ],
+      [
+        104,
+        165,
+        154,
+        5,
+        8
+      ],
+      [
+        106,
+        32
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        165,
+        244,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        139,
+        133,
+        228,
+        239,
+        255,
+        255
+      ],
+      [
+        131,
+        192,
+        32
+      ],
+      [
+        139,
+        77,
+        244
+      ],
+      [
+        101,
+        51,
+        13,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        116,
+        5
+      ],
+      [
+        232,
+        72,
+        241,
+        255,
+        255
+      ],
+      [
+        201
+      ],
+      [
+        195
+      ]
+    ],
+    "boundaries": [
+      134522325,
+      134522618
+    ],
+    "num_args": 1,
+    "inst_strings": [
+      "push ebp",
+      "mov ebp, esp",
+      "sub esp, 0x1028",
+      "mov eax, dword ptr [ebp + 8]",
+      "mov dword ptr [ebp - 0x101c], eax",
+      "mov eax, dword ptr gs:[0x14]",
+      "mov dword ptr [ebp - 0xc], eax",
+      "xor eax, eax",
+      "cmp dword ptr [ebp - 0x101c], 0",
+      "jne 0x3f",
+      "push 0x805a2a4",
+      "push 0xd2",
+      "push 0x8059a2d",
+      "push 0x8059a8a",
+      "call __assert_fail",
+      "mov eax, dword ptr [ebp - 0x101c]",
+      "mov edx, dword ptr [eax + 0x24]",
+      "mov eax, dword ptr [eax + 0x20]",
+      "or eax, edx",
+      "test eax, eax",
+      "jne 0x109",
+      "mov eax, dword ptr [ebp - 0x101c]",
+      "sub esp, 8",
+      "push 0",
+      "push eax",
+      "call sysfs_devname_to_devno",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x1018], eax",
+      "mov dword ptr [ebp - 0x1014], edx",
+      "mov eax, dword ptr [ebp - 0x1014]",
+      "or eax, dword ptr [ebp - 0x1018]",
+      "test eax, eax",
+      "jne 0x8f",
+      "mov eax, 0",
+      "jmp 0x112",
+      "mov eax, dword ptr [ebp - 0x101c]",
+      "add eax, 0x20",
+      "push 0",
+      "push dword ptr [ebp - 0x1014]",
+      "push dword ptr [ebp - 0x1018]",
+      "push eax",
+      "call sysfs_init",
+      "add esp, 0x10",
+      "test eax, eax",
+      "je 0xba",
+      "mov eax, 0",
+      "jmp 0x112",
+      "mov eax, dword ptr [ebp - 0x101c]",
+      "movzx eax, byte ptr [eax]",
+      "cmp al, 0x2f",
+      "je 0x109",
+      "mov eax, dword ptr [ebp - 0x101c]",
+      "lea edx, dword ptr [eax + 0x20]",
+      "sub esp, 4",
+      "push 0x1000",
+      "lea eax, dword ptr [ebp - 0x100c]",
+      "push eax",
+      "push edx",
+      "call sysfs_get_devname",
+      "add esp, 0x10",
+      "test eax, eax",
+      "je 0x109",
+      "mov eax, dword ptr [ebp - 0x101c]",
+      "lea edx, dword ptr [ebp - 0x100c]",
+      "push edx",
+      "push 0x8059aa5",
+      "push 0x20",
+      "push eax",
+      "call snprintf",
+      "add esp, 0x10",
+      "mov eax, dword ptr [ebp - 0x101c]",
+      "add eax, 0x20",
+      "mov ecx, dword ptr [ebp - 0xc]",
+      "xor ecx, dword ptr gs:[0x14]",
+      "je 0x123",
+      "call __stack_chk_fail",
+      "leave",
+      "ret"
+    ]
+  },
+  "new_zram": {
+    "ret_type": "struct zram*",
+    "args_type": [
+      "char*"
+    ],
+    "inst_bytes": [
+      [
+        85
+      ],
+      [
+        137,
+        229
+      ],
+      [
+        131,
+        236,
+        24
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        106,
+        80
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        232,
+        75,
+        251,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        69,
+        244
+      ],
+      [
+        131,
+        125,
+        8,
+        0
+      ],
+      [
+        116,
+        19
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        106,
+        0
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        255,
+        117,
+        244
+      ],
+      [
+        232,
+        225,
+        254,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        139,
+        69,
+        244
+      ],
+      [
+        201
+      ],
+      [
+        195
+      ]
+    ],
+    "boundaries": [
+      134522208,
+      134522262
+    ],
+    "num_args": 1,
+    "inst_strings": [
+      "push ebp",
+      "mov ebp, esp",
+      "sub esp, 0x18",
+      "sub esp, 8",
+      "push 0x50",
+      "push 1",
+      "call xcalloc",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0xc], eax",
+      "cmp dword ptr [ebp + 8], 0",
+      "je 0x31",
+      "sub esp, 4",
+      "push 0",
+      "push dword ptr [ebp + 8]",
+      "push dword ptr [ebp - 0xc]",
+      "call zram_set_devname",
+      "add esp, 0x10",
+      "mov eax, dword ptr [ebp - 0xc]",
+      "leave",
+      "ret"
+    ]
+  },
+  "zram_control_add": {
+    "ret_type": "int",
+    "args_type": [
+      "struct zram*"
+    ],
+    "inst_bytes": [
+      [
+        85
+      ],
+      [
+        137,
+        229
+      ],
+      [
+        131,
+        236,
+        24
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        232,
+        140,
+        255,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        117,
+        7
+      ],
+      [
+        184,
+        218,
+        255,
+        255,
+        255
+      ],
+      [
+        235,
+        55
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        208,
+        154,
+        5,
+        8
+      ],
+      [
+        232,
+        214,
+        32,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        69,
+        244
+      ],
+      [
+        131,
+        125,
+        244,
+        0
+      ],
+      [
+        121,
+        5
+      ],
+      [
+        139,
+        69,
+        244
+      ],
+      [
+        235,
+        25
+      ],
+      [
+        139,
+        69,
+        244
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        0
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        232,
+        117,
+        251,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        184,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        201
+      ],
+      [
+        195
+      ]
+    ],
+    "boundaries": [
+      134523052,
+      134523140
+    ],
+    "num_args": 1,
+    "inst_strings": [
+      "push ebp",
+      "mov ebp, esp",
+      "sub esp, 0x18",
+      "sub esp, 0xc",
+      "push dword ptr [ebp + 8]",
+      "call zram_has_control",
+      "add esp, 0x10",
+      "test eax, eax",
+      "jne 0x1f",
+      "mov eax, 0xffffffda",
+      "jmp 0x56",
+      "sub esp, 0xc",
+      "push 0x8059ad0",
+      "call path_read_s32",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0xc], eax",
+      "cmp dword ptr [ebp - 0xc], 0",
+      "jns 0x3d",
+      "mov eax, dword ptr [ebp - 0xc]",
+      "jmp 0x56",
+      "mov eax, dword ptr [ebp - 0xc]",
+      "sub esp, 4",
+      "push eax",
+      "push 0",
+      "push dword ptr [ebp + 8]",
+      "call zram_set_devname",
+      "add esp, 0x10",
+      "mov eax, 0",
+      "leave",
+      "ret"
+    ]
+  },
+  "get_column_id": {
+    "ret_type": "int",
+    "args_type": [
+      "int"
+    ],
+    "inst_bytes": [
+      [
+        85
+      ],
+      [
+        137,
+        229
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        161,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        57,
+        69,
+        8
+      ],
+      [
+        124,
+        25
+      ],
+      [
+        104,
+        112,
+        162,
+        5,
+        8
+      ],
+      [
+        104,
+        128,
+        0,
+        0,
+        0
+      ],
+      [
+        104,
+        45,
+        154,
+        5,
+        8
+      ],
+      [
+        104,
+        65,
+        154,
+        5,
+        8
+      ],
+      [
+        232,
+        214,
+        250,
+        255,
+        255
+      ],
+      [
+        139,
+        69,
+        8
+      ],
+      [
+        139,
+        4,
+        133,
+        64,
+        2,
+        6,
+        8
+      ],
+      [
+        131,
+        248,
+        11
+      ],
+      [
+        126,
+        25
+      ],
+      [
+        104,
+        112,
+        162,
+        5,
+        8
+      ],
+      [
+        104,
+        129,
+        0,
+        0,
+        0
+      ],
+      [
+        104,
+        45,
+        154,
+        5,
+        8
+      ],
+      [
+        104,
+        80,
+        154,
+        5,
+        8
+      ],
+      [
+        232,
+        174,
+        250,
+        255,
+        255
+      ],
+      [
+        139,
+        69,
+        8
+      ],
+      [
+        139,
+        4,
+        133,
+        64,
+        2,
+        6,
+        8
+      ],
+      [
+        201
+      ],
+      [
+        195
+      ]
+    ],
+    "boundaries": [
+      134521649,
+      134521742
+    ],
+    "num_args": 1,
+    "inst_strings": [
+      "push ebp",
+      "mov ebp, esp",
+      "sub esp, 8",
+      "mov eax, dword ptr [0x8060308]",
+      "cmp dword ptr [ebp + 8], eax",
+      "jl 0x29",
+      "push 0x805a270",
+      "push 0x80",
+      "push 0x8059a2d",
+      "push 0x8059a41",
+      "call __assert_fail",
+      "mov eax, dword ptr [ebp + 8]",
+      "mov eax, dword ptr [eax*4 + 0x8060240]",
+      "cmp eax, 0xb",
+      "jle 0x51",
+      "push 0x805a270",
+      "push 0x81",
+      "push 0x8059a2d",
+      "push 0x8059a50",
+      "call __assert_fail",
+      "mov eax, dword ptr [ebp + 8]",
+      "mov eax, dword ptr [eax*4 + 0x8060240]",
+      "leave",
+      "ret"
+    ]
+  },
+  "zram_set_devname": {
+    "ret_type": "void",
+    "args_type": [
+      "struct zram*",
+      "char*",
+      "unsigned int"
+    ],
+    "inst_bytes": [
+      [
+        85
+      ],
+      [
+        137,
+        229
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        131,
+        125,
+        8,
+        0
+      ],
+      [
+        117,
+        25
+      ],
+      [
+        104,
+        128,
+        162,
+        5,
+        8
+      ],
+      [
+        104,
+        163,
+        0,
+        0,
+        0
+      ],
+      [
+        104,
+        45,
+        154,
+        5,
+        8
+      ],
+      [
+        104,
+        138,
+        154,
+        5,
+        8
+      ],
+      [
+        232,
+        156,
+        249,
+        255,
+        255
+      ],
+      [
+        131,
+        125,
+        12,
+        0
+      ],
+      [
+        117,
+        24
+      ],
+      [
+        139,
+        69,
+        8
+      ],
+      [
+        255,
+        117,
+        16
+      ],
+      [
+        104,
+        140,
+        154,
+        5,
+        8
+      ],
+      [
+        106,
+        32
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        211,
+        246,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        235,
+        27
+      ],
+      [
+        139,
+        69,
+        8
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        106,
+        32
+      ],
+      [
+        255,
+        117,
+        12
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        237,
+        246,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        139,
+        69,
+        8
+      ],
+      [
+        198,
+        64,
+        31,
+        0
+      ],
+      [
+        139,
+        69,
+        8
+      ],
+      [
+        131,
+        192,
+        32
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        236,
+        187,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        232,
+        77,
+        255,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        144
+      ],
+      [
+        201
+      ],
+      [
+        195
+      ]
+    ],
+    "boundaries": [
+      134521967,
+      134522096
+    ],
+    "num_args": 3,
+    "inst_strings": [
+      "push ebp",
+      "mov ebp, esp",
+      "sub esp, 8",
+      "cmp dword ptr [ebp + 8], 0",
+      "jne 0x25",
+      "push 0x805a280",
+      "push 0xa3",
+      "push 0x8059a2d",
+      "push 0x8059a8a",
+      "call __assert_fail",
+      "cmp dword ptr [ebp + 0xc], 0",
+      "jne 0x43",
+      "mov eax, dword ptr [ebp + 8]",
+      "push dword ptr [ebp + 0x10]",
+      "push 0x8059a8c",
+      "push 0x20",
+      "push eax",
+      "call snprintf",
+      "add esp, 0x10",
+      "jmp 0x5e",
+      "mov eax, dword ptr [ebp + 8]",
+      "sub esp, 4",
+      "push 0x20",
+      "push dword ptr [ebp + 0xc]",
+      "push eax",
+      "call strncpy",
+      "add esp, 0x10",
+      "mov eax, dword ptr [ebp + 8]",
+      "mov byte ptr [eax + 0x1f], 0",
+      "mov eax, dword ptr [ebp + 8]",
+      "add eax, 0x20",
+      "sub esp, 0xc",
+      "push eax",
+      "call sysfs_deinit",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push dword ptr [ebp + 8]",
+      "call zram_reset_stat",
+      "add esp, 0x10",
+      "nop",
+      "leave",
+      "ret"
+    ]
+  },
+  "usage": {
+    "ret_type": "void",
+    "args_type": [
+      "struct _IO_FILE*"
+    ],
+    "inst_bytes": [
+      [
+        85
+      ],
+      [
+        137,
+        229
+      ],
+      [
+        83
+      ],
+      [
+        131,
+        236,
+        20
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        47,
+        156,
+        5,
+        8
+      ],
+      [
+        232,
+        142,
+        232,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        255,
+        235,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        139,
+        29,
+        224,
+        2,
+        6,
+        8
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        56,
+        156,
+        5,
+        8
+      ],
+      [
+        232,
+        105,
+        232,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        83
+      ],
+      [
+        80
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        232,
+        249,
+        232,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        106,
+        10
+      ],
+      [
+        232,
+        201,
+        234,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        148,
+        156,
+        5,
+        8
+      ],
+      [
+        232,
+        57,
+        232,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        170,
+        235,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        182,
+        156,
+        5,
+        8
+      ],
+      [
+        232,
+        26,
+        232,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        139,
+        235,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        196,
+        156,
+        5,
+        8
+      ],
+      [
+        232,
+        251,
+        231,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        108,
+        235,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        0,
+        157,
+        5,
+        8
+      ],
+      [
+        232,
+        220,
+        231,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        77,
+        235,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        88,
+        157,
+        5,
+        8
+      ],
+      [
+        232,
+        189,
+        231,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        46,
+        235,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        136,
+        157,
+        5,
+        8
+      ],
+      [
+        232,
+        158,
+        231,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        15,
+        235,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        188,
+        157,
+        5,
+        8
+      ],
+      [
+        232,
+        127,
+        231,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        240,
+        234,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        252,
+        157,
+        5,
+        8
+      ],
+      [
+        232,
+        96,
+        231,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        209,
+        234,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        56,
+        158,
+        5,
+        8
+      ],
+      [
+        232,
+        65,
+        231,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        178,
+        234,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        112,
+        158,
+        5,
+        8
+      ],
+      [
+        232,
+        34,
+        231,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        147,
+        234,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        152,
+        158,
+        5,
+        8
+      ],
+      [
+        232,
+        3,
+        231,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        116,
+        234,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        106,
+        10
+      ],
+      [
+        232,
+        100,
+        233,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        212,
+        158,
+        5,
+        8
+      ],
+      [
+        232,
+        212,
+        230,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        69,
+        234,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        0,
+        159,
+        5,
+        8
+      ],
+      [
+        232,
+        181,
+        230,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        38,
+        234,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        56,
+        159,
+        5,
+        8
+      ],
+      [
+        232,
+        150,
+        230,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        7,
+        234,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        199,
+        69,
+        244,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        235,
+        76
+      ],
+      [
+        139,
+        85,
+        244
+      ],
+      [
+        137,
+        208
+      ],
+      [
+        193,
+        224,
+        2
+      ],
+      [
+        1,
+        208
+      ],
+      [
+        193,
+        224,
+        2
+      ],
+      [
+        5,
+        240,
+        152,
+        5,
+        8
+      ],
+      [
+        139,
+        0
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        94,
+        230,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        193
+      ],
+      [
+        139,
+        85,
+        244
+      ],
+      [
+        137,
+        208
+      ],
+      [
+        193,
+        224,
+        2
+      ],
+      [
+        1,
+        208
+      ],
+      [
+        193,
+        224,
+        2
+      ],
+      [
+        5,
+        224,
+        152,
+        5,
+        8
+      ],
+      [
+        139,
+        0
+      ],
+      [
+        81
+      ],
+      [
+        80
+      ],
+      [
+        104,
+        92,
+        159,
+        5,
+        8
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        232,
+        214,
+        230,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        69,
+        244,
+        1
+      ],
+      [
+        131,
+        125,
+        244,
+        11
+      ],
+      [
+        118,
+        174
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        103,
+        159,
+        5,
+        8
+      ],
+      [
+        232,
+        28,
+        230,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        104,
+        130,
+        159,
+        5,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        232,
+        168,
+        230,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        161,
+        232,
+        2,
+        6,
+        8
+      ],
+      [
+        57,
+        69,
+        8
+      ],
+      [
+        15,
+        148,
+        192
+      ],
+      [
+        15,
+        182,
+        192
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        206,
+        229,
+        255,
+        255
+      ]
+    ],
+    "boundaries": [
+      134525374,
+      134526066
+    ],
+    "num_args": 1,
+    "inst_strings": [
+      "push ebp",
+      "mov ebp, esp",
+      "push ebx",
+      "sub esp, 0x14",
+      "sub esp, 0xc",
+      "push 0x8059c2f",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push dword ptr [ebp + 8]",
+      "push eax",
+      "call fputs",
+      "add esp, 0x10",
+      "mov ebx, dword ptr [0x80602e0]",
+      "sub esp, 0xc",
+      "push 0x8059c38",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 4",
+      "push ebx",
+      "push eax",
+      "push dword ptr [ebp + 8]",
+      "call fprintf",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push dword ptr [ebp + 8]",
+      "push 0xa",
+      "call fputc",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push 0x8059c94",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push dword ptr [ebp + 8]",
+      "push eax",
+      "call fputs",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push 0x8059cb6",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push dword ptr [ebp + 8]",
+      "push eax",
+      "call fputs",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push 0x8059cc4",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push dword ptr [ebp + 8]",
+      "push eax",
+      "call fputs",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push 0x8059d00",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push dword ptr [ebp + 8]",
+      "push eax",
+      "call fputs",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push 0x8059d58",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push dword ptr [ebp + 8]",
+      "push eax",
+      "call fputs",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push 0x8059d88",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push dword ptr [ebp + 8]",
+      "push eax",
+      "call fputs",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push 0x8059dbc",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push dword ptr [ebp + 8]",
+      "push eax",
+      "call fputs",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push 0x8059dfc",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push dword ptr [ebp + 8]",
+      "push eax",
+      "call fputs",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push 0x8059e38",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push dword ptr [ebp + 8]",
+      "push eax",
+      "call fputs",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push 0x8059e70",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push dword ptr [ebp + 8]",
+      "push eax",
+      "call fputs",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push 0x8059e98",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push dword ptr [ebp + 8]",
+      "push eax",
+      "call fputs",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push dword ptr [ebp + 8]",
+      "push 0xa",
+      "call fputc",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push 0x8059ed4",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push dword ptr [ebp + 8]",
+      "push eax",
+      "call fputs",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push 0x8059f00",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push dword ptr [ebp + 8]",
+      "push eax",
+      "call fputs",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push 0x8059f38",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push dword ptr [ebp + 8]",
+      "push eax",
+      "call fputs",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0xc], 0",
+      "jmp 0x273",
+      "mov edx, dword ptr [ebp - 0xc]",
+      "mov eax, edx",
+      "shl eax, 2",
+      "add eax, edx",
+      "shl eax, 2",
+      "add eax, 0x80598f0",
+      "mov eax, dword ptr [eax]",
+      "sub esp, 0xc",
+      "push eax",
+      "call gettext",
+      "add esp, 0x10",
+      "mov ecx, eax",
+      "mov edx, dword ptr [ebp - 0xc]",
+      "mov eax, edx",
+      "shl eax, 2",
+      "add eax, edx",
+      "shl eax, 2",
+      "add eax, 0x80598e0",
+      "mov eax, dword ptr [eax]",
+      "push ecx",
+      "push eax",
+      "push 0x8059f5c",
+      "push dword ptr [ebp + 8]",
+      "call fprintf",
+      "add esp, 0x10",
+      "add dword ptr [ebp - 0xc], 1",
+      "cmp dword ptr [ebp - 0xc], 0xb",
+      "jbe 0x227",
+      "sub esp, 0xc",
+      "push 0x8059f67",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 4",
+      "push 0x8059f82",
+      "push eax",
+      "push dword ptr [ebp + 8]",
+      "call fprintf",
+      "add esp, 0x10",
+      "mov eax, dword ptr [0x80602e8]",
+      "cmp dword ptr [ebp + 8], eax",
+      "sete al",
+      "movzx eax, al",
+      "sub esp, 0xc",
+      "push eax",
+      "call exit"
+    ]
+  },
+  "find_free_zram": {
+    "ret_type": "struct zram*",
+    "args_type": [],
+    "inst_bytes": [
+      [
+        85
+      ],
+      [
+        137,
+        229
+      ],
+      [
+        131,
+        236,
+        24
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        106,
+        0
+      ],
+      [
+        232,
+        195,
+        251,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        69,
+        236
+      ],
+      [
+        199,
+        69,
+        244,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        199,
+        69,
+        240,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        235,
+        84
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        255,
+        117,
+        240
+      ],
+      [
+        106,
+        0
+      ],
+      [
+        255,
+        117,
+        236
+      ],
+      [
+        232,
+        172,
+        250,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        236
+      ],
+      [
+        232,
+        41,
+        253,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        117,
+        18
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        236
+      ],
+      [
+        232,
+        201,
+        254,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        117,
+        37
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        236
+      ],
+      [
+        232,
+        224,
+        253,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        15,
+        148,
+        192
+      ],
+      [
+        15,
+        182,
+        192
+      ],
+      [
+        137,
+        69,
+        244
+      ],
+      [
+        131,
+        69,
+        240,
+        1
+      ],
+      [
+        131,
+        125,
+        244,
+        0
+      ],
+      [
+        116,
+        166
+      ],
+      [
+        235,
+        1
+      ],
+      [
+        144
+      ],
+      [
+        131,
+        125,
+        244,
+        0
+      ],
+      [
+        117,
+        21
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        236
+      ],
+      [
+        232,
+        117,
+        251,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        199,
+        69,
+        236,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        139,
+        69,
+        236
+      ],
+      [
+        201
+      ],
+      [
+        195
+      ]
+    ],
+    "boundaries": [
+      134523277,
+      134523440
+    ],
+    "num_args": 0,
+    "inst_strings": [
+      "push ebp",
+      "mov ebp, esp",
+      "sub esp, 0x18",
+      "sub esp, 0xc",
+      "push 0",
+      "call new_zram",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x14], eax",
+      "mov dword ptr [ebp - 0xc], 0",
+      "mov dword ptr [ebp - 0x10], 0",
+      "jmp 0x7a",
+      "sub esp, 4",
+      "push dword ptr [ebp - 0x10]",
+      "push 0",
+      "push dword ptr [ebp - 0x14]",
+      "call zram_set_devname",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x14]",
+      "call zram_exist",
+      "add esp, 0x10",
+      "test eax, eax",
+      "jne 0x5d",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x14]",
+      "call zram_control_add",
+      "add esp, 0x10",
+      "test eax, eax",
+      "jne 0x82",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x14]",
+      "call zram_used",
+      "add esp, 0x10",
+      "test eax, eax",
+      "sete al",
+      "movzx eax, al",
+      "mov dword ptr [ebp - 0xc], eax",
+      "add dword ptr [ebp - 0x10], 1",
+      "cmp dword ptr [ebp - 0xc], 0",
+      "je 0x26",
+      "jmp 0x83",
+      "nop",
+      "cmp dword ptr [ebp - 0xc], 0",
+      "jne 0x9e",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x14]",
+      "call free_zram",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x14], 0",
+      "mov eax, dword ptr [ebp - 0x14]",
+      "leave",
+      "ret"
+    ]
+  },
+  "free_zram": {
+    "ret_type": "void",
+    "args_type": [
+      "struct zram*"
+    ],
+    "inst_bytes": [
+      [
+        85
+      ],
+      [
+        137,
+        229
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        131,
+        125,
+        8,
+        0
+      ],
+      [
+        116,
+        48
+      ],
+      [
+        139,
+        69,
+        8
+      ],
+      [
+        131,
+        192,
+        32
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        23,
+        187,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        232,
+        120,
+        254,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        232,
+        147,
+        241,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        235,
+        1
+      ],
+      [
+        144
+      ],
+      [
+        201
+      ],
+      [
+        195
+      ]
+    ],
+    "boundaries": [
+      134522262,
+      134522325
+    ],
+    "num_args": 1,
+    "inst_strings": [
+      "push ebp",
+      "mov ebp, esp",
+      "sub esp, 8",
+      "cmp dword ptr [ebp + 8], 0",
+      "je 0x3c",
+      "mov eax, dword ptr [ebp + 8]",
+      "add eax, 0x20",
+      "sub esp, 0xc",
+      "push eax",
+      "call sysfs_deinit",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push dword ptr [ebp + 8]",
+      "call zram_reset_stat",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push dword ptr [ebp + 8]",
+      "call free",
+      "add esp, 0x10",
+      "jmp 0x3d",
+      "nop",
+      "leave",
+      "ret"
+    ]
+  },
+  "main": {
+    "ret_type": "int",
+    "args_type": [
+      "int",
+      "char**"
+    ],
+    "inst_bytes": [
+      [
+        141,
+        76,
+        36,
+        4
+      ],
+      [
+        131,
+        228,
+        240
+      ],
+      [
+        255,
+        113,
+        252
+      ],
+      [
+        85
+      ],
+      [
+        137,
+        229
+      ],
+      [
+        86
+      ],
+      [
+        83
+      ],
+      [
+        81
+      ],
+      [
+        131,
+        236,
+        92
+      ],
+      [
+        137,
+        203
+      ],
+      [
+        139,
+        67,
+        4
+      ],
+      [
+        137,
+        69,
+        164
+      ],
+      [
+        101,
+        161,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        137,
+        69,
+        228
+      ],
+      [
+        49,
+        192
+      ],
+      [
+        199,
+        69,
+        200,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        199,
+        69,
+        204,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        199,
+        69,
+        208,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        199,
+        69,
+        212,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        199,
+        69,
+        176,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        199,
+        69,
+        180,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        199,
+        69,
+        184,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        199,
+        69,
+        188,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        199,
+        69,
+        192,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        199,
+        69,
+        216,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        199,
+        69,
+        220,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        199,
+        69,
+        224,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        104,
+        141,
+        159,
+        5,
+        8
+      ],
+      [
+        106,
+        6
+      ],
+      [
+        232,
+        181,
+        231,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        104,
+        144,
+        159,
+        5,
+        8
+      ],
+      [
+        104,
+        203,
+        159,
+        5,
+        8
+      ],
+      [
+        232,
+        112,
+        232,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        203,
+        159,
+        5,
+        8
+      ],
+      [
+        232,
+        96,
+        227,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        37,
+        160,
+        4,
+        8
+      ],
+      [
+        232,
+        176,
+        223,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        233,
+        230,
+        1,
+        0,
+        0
+      ],
+      [
+        141,
+        69,
+        216
+      ],
+      [
+        80
+      ],
+      [
+        104,
+        224,
+        163,
+        5,
+        8
+      ],
+      [
+        104,
+        32,
+        163,
+        5,
+        8
+      ],
+      [
+        255,
+        117,
+        196
+      ],
+      [
+        232,
+        64,
+        236,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        139,
+        69,
+        196
+      ],
+      [
+        131,
+        232,
+        86
+      ],
+      [
+        131,
+        248,
+        42
+      ],
+      [
+        15,
+        135,
+        137,
+        1,
+        0,
+        0
+      ],
+      [
+        139,
+        4,
+        133,
+        196,
+        161,
+        5,
+        8
+      ],
+      [
+        255,
+        224
+      ],
+      [
+        161,
+        0,
+        3,
+        6,
+        8
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        104,
+        160,
+        155,
+        5,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        36,
+        225,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        116,
+        60
+      ],
+      [
+        161,
+        0,
+        3,
+        6,
+        8
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        104,
+        156,
+        155,
+        5,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        10,
+        225,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        116,
+        34
+      ],
+      [
+        139,
+        29,
+        0,
+        3,
+        6,
+        8
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        214,
+        159,
+        5,
+        8
+      ],
+      [
+        232,
+        176,
+        228,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        83
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        232,
+        225,
+        230,
+        255,
+        255
+      ],
+      [
+        161,
+        0,
+        3,
+        6,
+        8
+      ],
+      [
+        137,
+        69,
+        176
+      ],
+      [
+        233,
+        82,
+        1,
+        0,
+        0
+      ],
+      [
+        199,
+        5,
+        20,
+        3,
+        6,
+        8,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        233,
+        67,
+        1,
+        0,
+        0
+      ],
+      [
+        199,
+        69,
+        184,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        233,
+        55,
+        1,
+        0,
+        0
+      ],
+      [
+        161,
+        0,
+        3,
+        6,
+        8
+      ],
+      [
+        104,
+        181,
+        163,
+        4,
+        8
+      ],
+      [
+        106,
+        24
+      ],
+      [
+        104,
+        64,
+        2,
+        6,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        174,
+        46,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        163,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        161,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        15,
+        137,
+        11,
+        1,
+        0,
+        0
+      ],
+      [
+        184,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        233,
+        57,
+        6,
+        0,
+        0
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        240,
+        159,
+        5,
+        8
+      ],
+      [
+        232,
+        54,
+        228,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        194
+      ],
+      [
+        161,
+        0,
+        3,
+        6,
+        8
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        82
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        138,
+        39,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        69,
+        200
+      ],
+      [
+        137,
+        85,
+        204
+      ],
+      [
+        199,
+        69,
+        188,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        233,
+        203,
+        0,
+        0,
+        0
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        5,
+        160,
+        5,
+        8
+      ],
+      [
+        232,
+        0,
+        228,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        194
+      ],
+      [
+        161,
+        0,
+        3,
+        6,
+        8
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        82
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        139,
+        36,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        69,
+        208
+      ],
+      [
+        137,
+        85,
+        212
+      ],
+      [
+        233,
+        156,
+        0,
+        0,
+        0
+      ],
+      [
+        199,
+        69,
+        188,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        233,
+        144,
+        0,
+        0,
+        0
+      ],
+      [
+        199,
+        5,
+        12,
+        3,
+        6,
+        8,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        233,
+        129,
+        0,
+        0,
+        0
+      ],
+      [
+        199,
+        5,
+        16,
+        3,
+        6,
+        8,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        235,
+        117
+      ],
+      [
+        139,
+        29,
+        224,
+        2,
+        6,
+        8
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        29,
+        160,
+        5,
+        8
+      ],
+      [
+        232,
+        164,
+        227,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        104,
+        41,
+        160,
+        5,
+        8
+      ],
+      [
+        83
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        18,
+        224,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        184,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        233,
+        123,
+        5,
+        0,
+        0
+      ],
+      [
+        161,
+        240,
+        2,
+        6,
+        8
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        213,
+        250,
+        255,
+        255
+      ],
+      [
+        139,
+        29,
+        224,
+        2,
+        6,
+        8
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        60,
+        160,
+        5,
+        8
+      ],
+      [
+        232,
+        100,
+        227,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        194
+      ],
+      [
+        161,
+        232,
+        2,
+        6,
+        8
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        83
+      ],
+      [
+        82
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        239,
+        227,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        232,
+        34,
+        227,
+        255,
+        255
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        106,
+        0
+      ],
+      [
+        104,
+        32,
+        163,
+        5,
+        8
+      ],
+      [
+        104,
+        99,
+        160,
+        5,
+        8
+      ],
+      [
+        255,
+        117,
+        164
+      ],
+      [
+        255,
+        51
+      ],
+      [
+        232,
+        73,
+        227,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        32
+      ],
+      [
+        137,
+        69,
+        196
+      ],
+      [
+        131,
+        125,
+        196,
+        255
+      ],
+      [
+        15,
+        133,
+        241,
+        253,
+        255,
+        255
+      ],
+      [
+        131,
+        125,
+        184,
+        0
+      ],
+      [
+        116,
+        36
+      ],
+      [
+        161,
+        236,
+        2,
+        6,
+        8
+      ],
+      [
+        59,
+        3
+      ],
+      [
+        125,
+        27
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        116,
+        160,
+        5,
+        8
+      ],
+      [
+        232,
+        253,
+        226,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        232,
+        47,
+        229,
+        255,
+        255
+      ],
+      [
+        131,
+        125,
+        188,
+        0
+      ],
+      [
+        117,
+        21
+      ],
+      [
+        131,
+        125,
+        184,
+        0
+      ],
+      [
+        116,
+        7
+      ],
+      [
+        184,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        235,
+        5
+      ],
+      [
+        184,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        137,
+        69,
+        188
+      ],
+      [
+        131,
+        125,
+        188,
+        4
+      ],
+      [
+        116,
+        39
+      ],
+      [
+        161,
+        236,
+        2,
+        6,
+        8
+      ],
+      [
+        131,
+        192,
+        1
+      ],
+      [
+        59,
+        3
+      ],
+      [
+        125,
+        27
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        168,
+        160,
+        5,
+        8
+      ],
+      [
+        232,
+        181,
+        226,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        232,
+        231,
+        228,
+        255,
+        255
+      ],
+      [
+        131,
+        125,
+        188,
+        1
+      ],
+      [
+        116,
+        6
+      ],
+      [
+        131,
+        125,
+        188,
+        3
+      ],
+      [
+        117,
+        43
+      ],
+      [
+        131,
+        125,
+        176,
+        0
+      ],
+      [
+        117,
+        10
+      ],
+      [
+        139,
+        69,
+        212
+      ],
+      [
+        11,
+        69,
+        208
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        116,
+        27
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        208,
+        160,
+        5,
+        8
+      ],
+      [
+        232,
+        126,
+        226,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        232,
+        176,
+        228,
+        255,
+        255
+      ],
+      [
+        139,
+        69,
+        188
+      ],
+      [
+        131,
+        248,
+        2
+      ],
+      [
+        15,
+        132,
+        150,
+        2,
+        0,
+        0
+      ],
+      [
+        131,
+        248,
+        2
+      ],
+      [
+        127,
+        10
+      ],
+      [
+        131,
+        248,
+        1
+      ],
+      [
+        116,
+        28
+      ],
+      [
+        233,
+        65,
+        4,
+        0,
+        0
+      ],
+      [
+        131,
+        248,
+        3
+      ],
+      [
+        15,
+        132,
+        51,
+        2,
+        0,
+        0
+      ],
+      [
+        131,
+        248,
+        4
+      ],
+      [
+        15,
+        132,
+        84,
+        1,
+        0,
+        0
+      ],
+      [
+        233,
+        42,
+        4,
+        0,
+        0
+      ],
+      [
+        161,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        15,
+        133,
+        200,
+        0,
+        0,
+        0
+      ],
+      [
+        161,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        141,
+        80,
+        1
+      ],
+      [
+        137,
+        21,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        199,
+        4,
+        133,
+        64,
+        2,
+        6,
+        8,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        161,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        141,
+        80,
+        1
+      ],
+      [
+        137,
+        21,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        199,
+        4,
+        133,
+        64,
+        2,
+        6,
+        8,
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        161,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        141,
+        80,
+        1
+      ],
+      [
+        137,
+        21,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        199,
+        4,
+        133,
+        64,
+        2,
+        6,
+        8,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        161,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        141,
+        80,
+        1
+      ],
+      [
+        137,
+        21,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        199,
+        4,
+        133,
+        64,
+        2,
+        6,
+        8,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        161,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        141,
+        80,
+        1
+      ],
+      [
+        137,
+        21,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        199,
+        4,
+        133,
+        64,
+        2,
+        6,
+        8,
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        161,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        141,
+        80,
+        1
+      ],
+      [
+        137,
+        21,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        199,
+        4,
+        133,
+        64,
+        2,
+        6,
+        8,
+        7,
+        0,
+        0,
+        0
+      ],
+      [
+        161,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        141,
+        80,
+        1
+      ],
+      [
+        137,
+        21,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        199,
+        4,
+        133,
+        64,
+        2,
+        6,
+        8,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        161,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        141,
+        80,
+        1
+      ],
+      [
+        137,
+        21,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        199,
+        4,
+        133,
+        64,
+        2,
+        6,
+        8,
+        11,
+        0,
+        0,
+        0
+      ],
+      [
+        161,
+        236,
+        2,
+        6,
+        8
+      ],
+      [
+        59,
+        3
+      ],
+      [
+        125,
+        80
+      ],
+      [
+        161,
+        236,
+        2,
+        6,
+        8
+      ],
+      [
+        141,
+        80,
+        1
+      ],
+      [
+        137,
+        21,
+        236,
+        2,
+        6,
+        8
+      ],
+      [
+        141,
+        20,
+        133,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        139,
+        69,
+        164
+      ],
+      [
+        1,
+        208
+      ],
+      [
+        139,
+        0
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        59,
+        236,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        69,
+        192
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        192
+      ],
+      [
+        232,
+        196,
+        237,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        117,
+        19
+      ],
+      [
+        139,
+        69,
+        192
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        80
+      ],
+      [
+        104,
+        15,
+        161,
+        5,
+        8
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        232,
+        64,
+        223,
+        255,
+        255
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        192
+      ],
+      [
+        232,
+        227,
+        246,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        192
+      ],
+      [
+        232,
+        45,
+        236,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        233,
+        219,
+        2,
+        0,
+        0
+      ],
+      [
+        161,
+        236,
+        2,
+        6,
+        8
+      ],
+      [
+        59,
+        3
+      ],
+      [
+        15,
+        133,
+        183,
+        0,
+        0,
+        0
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        18,
+        161,
+        5,
+        8
+      ],
+      [
+        232,
+        213,
+        224,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        232,
+        7,
+        227,
+        255,
+        255
+      ],
+      [
+        161,
+        236,
+        2,
+        6,
+        8
+      ],
+      [
+        141,
+        20,
+        133,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        139,
+        69,
+        164
+      ],
+      [
+        1,
+        208
+      ],
+      [
+        139,
+        0
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        171,
+        235,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        69,
+        192
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        192
+      ],
+      [
+        232,
+        52,
+        237,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        116,
+        24
+      ],
+      [
+        106,
+        0
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        104,
+        38,
+        161,
+        5,
+        8
+      ],
+      [
+        255,
+        117,
+        192
+      ],
+      [
+        232,
+        119,
+        237,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        116,
+        39
+      ],
+      [
+        139,
+        117,
+        192
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        44,
+        161,
+        5,
+        8
+      ],
+      [
+        232,
+        107,
+        224,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        86
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        126,
+        226,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        199,
+        69,
+        180,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        192
+      ],
+      [
+        232,
+        237,
+        238,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        192
+      ],
+      [
+        232,
+        113,
+        235,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        161,
+        236,
+        2,
+        6,
+        8
+      ],
+      [
+        131,
+        192,
+        1
+      ],
+      [
+        163,
+        236,
+        2,
+        6,
+        8
+      ],
+      [
+        161,
+        236,
+        2,
+        6,
+        8
+      ],
+      [
+        59,
+        3
+      ],
+      [
+        15,
+        140,
+        87,
+        255,
+        255,
+        255
+      ],
+      [
+        233,
+        5,
+        2,
+        0,
+        0
+      ],
+      [
+        232,
+        65,
+        239,
+        255,
+        255
+      ],
+      [
+        137,
+        69,
+        192
+      ],
+      [
+        131,
+        125,
+        192,
+        0
+      ],
+      [
+        117,
+        27
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        64,
+        161,
+        5,
+        8
+      ],
+      [
+        232,
+        254,
+        223,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        232,
+        48,
+        226,
+        255,
+        255
+      ],
+      [
+        139,
+        69,
+        192
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        100,
+        223,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        192
+      ],
+      [
+        232,
+        12,
+        235,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        233,
+        186,
+        1,
+        0,
+        0
+      ],
+      [
+        131,
+        125,
+        184,
+        0
+      ],
+      [
+        116,
+        45
+      ],
+      [
+        232,
+        240,
+        238,
+        255,
+        255
+      ],
+      [
+        137,
+        69,
+        192
+      ],
+      [
+        131,
+        125,
+        192,
+        0
+      ],
+      [
+        15,
+        133,
+        134,
+        0,
+        0,
+        0
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        64,
+        161,
+        5,
+        8
+      ],
+      [
+        232,
+        169,
+        223,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        232,
+        219,
+        225,
+        255,
+        255
+      ],
+      [
+        161,
+        236,
+        2,
+        6,
+        8
+      ],
+      [
+        59,
+        3
+      ],
+      [
+        117,
+        27
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        18,
+        161,
+        5,
+        8
+      ],
+      [
+        232,
+        133,
+        223,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        232,
+        183,
+        225,
+        255,
+        255
+      ],
+      [
+        161,
+        236,
+        2,
+        6,
+        8
+      ],
+      [
+        141,
+        20,
+        133,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        139,
+        69,
+        164
+      ],
+      [
+        1,
+        208
+      ],
+      [
+        139,
+        0
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        91,
+        234,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        69,
+        192
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        192
+      ],
+      [
+        232,
+        228,
+        235,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        117,
+        19
+      ],
+      [
+        139,
+        69,
+        192
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        80
+      ],
+      [
+        104,
+        15,
+        161,
+        5,
+        8
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        232,
+        96,
+        221,
+        255,
+        255
+      ],
+      [
+        106,
+        0
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        104,
+        38,
+        161,
+        5,
+        8
+      ],
+      [
+        255,
+        117,
+        192
+      ],
+      [
+        232,
+        20,
+        236,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        116,
+        31
+      ],
+      [
+        139,
+        93,
+        192
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        44,
+        161,
+        5,
+        8
+      ],
+      [
+        232,
+        8,
+        223,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        83
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        232,
+        41,
+        221,
+        255,
+        255
+      ],
+      [
+        139,
+        69,
+        212
+      ],
+      [
+        11,
+        69,
+        208
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        116,
+        57
+      ],
+      [
+        255,
+        117,
+        212
+      ],
+      [
+        255,
+        117,
+        208
+      ],
+      [
+        104,
+        164,
+        155,
+        5,
+        8
+      ],
+      [
+        255,
+        117,
+        192
+      ],
+      [
+        232,
+        209,
+        235,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        116,
+        31
+      ],
+      [
+        139,
+        93,
+        192
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        92,
+        161,
+        5,
+        8
+      ],
+      [
+        232,
+        197,
+        222,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        83
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        232,
+        230,
+        220,
+        255,
+        255
+      ],
+      [
+        131,
+        125,
+        176,
+        0
+      ],
+      [
+        116,
+        57
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        255,
+        117,
+        176
+      ],
+      [
+        104,
+        129,
+        155,
+        5,
+        8
+      ],
+      [
+        255,
+        117,
+        192
+      ],
+      [
+        232,
+        216,
+        235,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        116,
+        31
+      ],
+      [
+        139,
+        93,
+        192
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        128,
+        161,
+        5,
+        8
+      ],
+      [
+        232,
+        134,
+        222,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        83
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        232,
+        167,
+        220,
+        255,
+        255
+      ],
+      [
+        255,
+        117,
+        204
+      ],
+      [
+        255,
+        117,
+        200
+      ],
+      [
+        104,
+        173,
+        154,
+        5,
+        8
+      ],
+      [
+        255,
+        117,
+        192
+      ],
+      [
+        232,
+        89,
+        235,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        116,
+        37
+      ],
+      [
+        139,
+        93,
+        192
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        156,
+        161,
+        5,
+        8
+      ],
+      [
+        232,
+        77,
+        222,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        204
+      ],
+      [
+        255,
+        117,
+        200
+      ],
+      [
+        83
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        232,
+        104,
+        220,
+        255,
+        255
+      ],
+      [
+        131,
+        125,
+        184,
+        0
+      ],
+      [
+        116,
+        15
+      ],
+      [
+        139,
+        69,
+        192
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        166,
+        221,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        192
+      ],
+      [
+        232,
+        78,
+        233,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        144
+      ],
+      [
+        131,
+        125,
+        180,
+        0
+      ],
+      [
+        15,
+        149,
+        192
+      ],
+      [
+        15,
+        182,
+        192
+      ],
+      [
+        139,
+        77,
+        228
+      ],
+      [
+        101,
+        51,
+        13,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        116,
+        5
+      ],
+      [
+        232,
+        217,
+        219,
+        255,
+        255
+      ],
+      [
+        141,
+        101,
+        244
+      ],
+      [
+        89
+      ],
+      [
+        91
+      ],
+      [
+        94
+      ],
+      [
+        93
+      ],
+      [
+        141,
+        97,
+        252
+      ],
+      [
+        195
+      ]
+    ],
+    "boundaries": [
+      134526066,
+      134528114
+    ],
+    "num_args": 2,
+    "inst_strings": [
+      "lea ecx, dword ptr [esp + 4]",
+      "and esp, 0xfffffff0",
+      "push dword ptr [ecx - 4]",
+      "push ebp",
+      "mov ebp, esp",
+      "push esi",
+      "push ebx",
+      "push ecx",
+      "sub esp, 0x5c",
+      "mov ebx, ecx",
+      "mov eax, dword ptr [ebx + 4]",
+      "mov dword ptr [ebp - 0x5c], eax",
+      "mov eax, dword ptr gs:[0x14]",
+      "mov dword ptr [ebp - 0x1c], eax",
+      "xor eax, eax",
+      "mov dword ptr [ebp - 0x38], 0",
+      "mov dword ptr [ebp - 0x34], 0",
+      "mov dword ptr [ebp - 0x30], 0",
+      "mov dword ptr [ebp - 0x2c], 0",
+      "mov dword ptr [ebp - 0x50], 0",
+      "mov dword ptr [ebp - 0x4c], 0",
+      "mov dword ptr [ebp - 0x48], 0",
+      "mov dword ptr [ebp - 0x44], 0",
+      "mov dword ptr [ebp - 0x40], 0",
+      "mov dword ptr [ebp - 0x28], 0",
+      "mov dword ptr [ebp - 0x24], 0",
+      "mov dword ptr [ebp - 0x20], 0",
+      "sub esp, 8",
+      "push 0x8059f8d",
+      "push 6",
+      "call setlocale",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push 0x8059f90",
+      "push 0x8059fcb",
+      "call bindtextdomain",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push 0x8059fcb",
+      "call textdomain",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push 0x804a025",
+      "call atexit",
+      "add esp, 0x10",
+      "jmp 0x2ac",
+      "lea eax, dword ptr [ebp - 0x28]",
+      "push eax",
+      "push 0x805a3e0",
+      "push 0x805a320",
+      "push dword ptr [ebp - 0x3c]",
+      "call err_exclusive_options",
+      "add esp, 0x10",
+      "mov eax, dword ptr [ebp - 0x3c]",
+      "sub eax, 0x56",
+      "cmp eax, 0x2a",
+      "ja 0x277",
+      "mov eax, dword ptr [eax*4 + 0x805a1c4]",
+      "jmp eax",
+      "mov eax, dword ptr [0x8060300]",
+      "sub esp, 8",
+      "push 0x8059ba0",
+      "push eax",
+      "call strcmp",
+      "add esp, 0x10",
+      "test eax, eax",
+      "je 0x14d",
+      "mov eax, dword ptr [0x8060300]",
+      "sub esp, 8",
+      "push 0x8059b9c",
+      "push eax",
+      "call strcmp",
+      "add esp, 0x10",
+      "test eax, eax",
+      "je 0x14d",
+      "mov ebx, dword ptr [0x8060300]",
+      "sub esp, 0xc",
+      "push 0x8059fd6",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 4",
+      "push ebx",
+      "push eax",
+      "push 1",
+      "call errx",
+      "mov eax, dword ptr [0x8060300]",
+      "mov dword ptr [ebp - 0x50], eax",
+      "jmp 0x2ac",
+      "mov dword ptr [0x8060314], 1",
+      "jmp 0x2ac",
+      "mov dword ptr [ebp - 0x48], 1",
+      "jmp 0x2ac",
+      "mov eax, dword ptr [0x8060300]",
+      "push 0x804a3b5",
+      "push 0x18",
+      "push 0x8060240",
+      "push eax",
+      "call string_to_idarray",
+      "add esp, 0x10",
+      "mov dword ptr [0x8060308], eax",
+      "mov eax, dword ptr [0x8060308]",
+      "test eax, eax",
+      "jns 0x2ac",
+      "mov eax, 1",
+      "jmp 0x7e4",
+      "sub esp, 0xc",
+      "push 0x8059ff0",
+      "call gettext",
+      "add esp, 0x10",
+      "mov edx, eax",
+      "mov eax, dword ptr [0x8060300]",
+      "sub esp, 8",
+      "push edx",
+      "push eax",
+      "call strtosize_or_err",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x38], eax",
+      "mov dword ptr [ebp - 0x34], edx",
+      "mov dword ptr [ebp - 0x44], 2",
+      "jmp 0x2ac",
+      "sub esp, 0xc",
+      "push 0x805a005",
+      "call gettext",
+      "add esp, 0x10",
+      "mov edx, eax",
+      "mov eax, dword ptr [0x8060300]",
+      "sub esp, 8",
+      "push edx",
+      "push eax",
+      "call strtou64_or_err",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x30], eax",
+      "mov dword ptr [ebp - 0x2c], edx",
+      "jmp 0x2ac",
+      "mov dword ptr [ebp - 0x44], 4",
+      "jmp 0x2ac",
+      "mov dword ptr [0x806030c], 1",
+      "jmp 0x2ac",
+      "mov dword ptr [0x8060310], 1",
+      "jmp 0x2ac",
+      "mov ebx, dword ptr [0x80602e0]",
+      "sub esp, 0xc",
+      "push 0x805a01d",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 4",
+      "push 0x805a029",
+      "push ebx",
+      "push eax",
+      "call printf",
+      "add esp, 0x10",
+      "mov eax, 0",
+      "jmp 0x7e4",
+      "mov eax, dword ptr [0x80602f0]",
+      "sub esp, 0xc",
+      "push eax",
+      "call usage",
+      "mov ebx, dword ptr [0x80602e0]",
+      "sub esp, 0xc",
+      "push 0x805a03c",
+      "call gettext",
+      "add esp, 0x10",
+      "mov edx, eax",
+      "mov eax, dword ptr [0x80602e8]",
+      "sub esp, 4",
+      "push ebx",
+      "push edx",
+      "push eax",
+      "call fprintf",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push 1",
+      "call exit",
+      "sub esp, 0xc",
+      "push 0",
+      "push 0x805a320",
+      "push 0x805a063",
+      "push dword ptr [ebp - 0x5c]",
+      "push dword ptr [ebx]",
+      "call getopt_long",
+      "add esp, 0x20",
+      "mov dword ptr [ebp - 0x3c], eax",
+      "cmp dword ptr [ebp - 0x3c], -1",
+      "jne 0xc6",
+      "cmp dword ptr [ebp - 0x48], 0",
+      "je 0x2ff",
+      "mov eax, dword ptr [0x80602ec]",
+      "cmp eax, dword ptr [ebx]",
+      "jge 0x2ff",
+      "sub esp, 0xc",
+      "push 0x805a074",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push eax",
+      "push 1",
+      "call errx",
+      "cmp dword ptr [ebp - 0x44], 0",
+      "jne 0x31a",
+      "cmp dword ptr [ebp - 0x48], 0",
+      "je 0x312",
+      "mov eax, 3",
+      "jmp 0x317",
+      "mov eax, 1",
+      "mov dword ptr [ebp - 0x44], eax",
+      "cmp dword ptr [ebp - 0x44], 4",
+      "je 0x347",
+      "mov eax, dword ptr [0x80602ec]",
+      "add eax, 1",
+      "cmp eax, dword ptr [ebx]",
+      "jge 0x347",
+      "sub esp, 0xc",
+      "push 0x805a0a8",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push eax",
+      "push 1",
+      "call errx",
+      "cmp dword ptr [ebp - 0x44], 1",
+      "je 0x353",
+      "cmp dword ptr [ebp - 0x44], 3",
+      "jne 0x37e",
+      "cmp dword ptr [ebp - 0x50], 0",
+      "jne 0x363",
+      "mov eax, dword ptr [ebp - 0x2c]",
+      "or eax, dword ptr [ebp - 0x30]",
+      "test eax, eax",
+      "je 0x37e",
+      "sub esp, 0xc",
+      "push 0x805a0d0",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push eax",
+      "push 1",
+      "call errx",
+      "mov eax, dword ptr [ebp - 0x44]",
+      "cmp eax, 2",
+      "je 0x620",
+      "cmp eax, 2",
+      "jg 0x399",
+      "cmp eax, 1",
+      "je 0x3b0",
+      "jmp 0x7da",
+      "cmp eax, 3",
+      "je 0x5d5",
+      "cmp eax, 4",
+      "je 0x4ff",
+      "jmp 0x7da",
+      "mov eax, dword ptr [0x8060308]",
+      "test eax, eax",
+      "jne 0x485",
+      "mov eax, dword ptr [0x8060308]",
+      "lea edx, dword ptr [eax + 1]",
+      "mov dword ptr [0x8060308], edx",
+      "mov dword ptr [eax*4 + 0x8060240], 0",
+      "mov eax, dword ptr [0x8060308]",
+      "lea edx, dword ptr [eax + 1]",
+      "mov dword ptr [0x8060308], edx",
+      "mov dword ptr [eax*4 + 0x8060240], 4",
+      "mov eax, dword ptr [0x8060308]",
+      "lea edx, dword ptr [eax + 1]",
+      "mov dword ptr [0x8060308], edx",
+      "mov dword ptr [eax*4 + 0x8060240], 1",
+      "mov eax, dword ptr [0x8060308]",
+      "lea edx, dword ptr [eax + 1]",
+      "mov dword ptr [0x8060308], edx",
+      "mov dword ptr [eax*4 + 0x8060240], 2",
+      "mov eax, dword ptr [0x8060308]",
+      "lea edx, dword ptr [eax + 1]",
+      "mov dword ptr [0x8060308], edx",
+      "mov dword ptr [eax*4 + 0x8060240], 3",
+      "mov eax, dword ptr [0x8060308]",
+      "lea edx, dword ptr [eax + 1]",
+      "mov dword ptr [0x8060308], edx",
+      "mov dword ptr [eax*4 + 0x8060240], 7",
+      "mov eax, dword ptr [0x8060308]",
+      "lea edx, dword ptr [eax + 1]",
+      "mov dword ptr [0x8060308], edx",
+      "mov dword ptr [eax*4 + 0x8060240], 5",
+      "mov eax, dword ptr [0x8060308]",
+      "lea edx, dword ptr [eax + 1]",
+      "mov dword ptr [0x8060308], edx",
+      "mov dword ptr [eax*4 + 0x8060240], 0xb",
+      "mov eax, dword ptr [0x80602ec]",
+      "cmp eax, dword ptr [ebx]",
+      "jge 0x4de",
+      "mov eax, dword ptr [0x80602ec]",
+      "lea edx, dword ptr [eax + 1]",
+      "mov dword ptr [0x80602ec], edx",
+      "lea edx, dword ptr [eax*4]",
+      "mov eax, dword ptr [ebp - 0x5c]",
+      "add eax, edx",
+      "mov eax, dword ptr [eax]",
+      "sub esp, 0xc",
+      "push eax",
+      "call new_zram",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x40], eax",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x40]",
+      "call zram_exist",
+      "add esp, 0x10",
+      "test eax, eax",
+      "jne 0x4de",
+      "mov eax, dword ptr [ebp - 0x40]",
+      "sub esp, 4",
+      "push eax",
+      "push 0x805a10f",
+      "push 1",
+      "call err",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x40]",
+      "call status",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x40]",
+      "call free_zram",
+      "add esp, 0x10",
+      "jmp 0x7da",
+      "mov eax, dword ptr [0x80602ec]",
+      "cmp eax, dword ptr [ebx]",
+      "jne 0x5c3",
+      "sub esp, 0xc",
+      "push 0x805a112",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push eax",
+      "push 1",
+      "call errx",
+      "mov eax, dword ptr [0x80602ec]",
+      "lea edx, dword ptr [eax*4]",
+      "mov eax, dword ptr [ebp - 0x5c]",
+      "add eax, edx",
+      "mov eax, dword ptr [eax]",
+      "sub esp, 0xc",
+      "push eax",
+      "call new_zram",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x40], eax",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x40]",
+      "call zram_exist",
+      "add esp, 0x10",
+      "test eax, eax",
+      "je 0x573",
+      "push 0",
+      "push 1",
+      "push 0x805a126",
+      "push dword ptr [ebp - 0x40]",
+      "call zram_set_u64parm",
+      "add esp, 0x10",
+      "test eax, eax",
+      "je 0x59a",
+      "mov esi, dword ptr [ebp - 0x40]",
+      "sub esp, 0xc",
+      "push 0x805a12c",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push esi",
+      "push eax",
+      "call warn",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x4c], 1",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x40]",
+      "call zram_control_remove",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x40]",
+      "call free_zram",
+      "add esp, 0x10",
+      "mov eax, dword ptr [0x80602ec]",
+      "add eax, 1",
+      "mov dword ptr [0x80602ec], eax",
+      "mov eax, dword ptr [0x80602ec]",
+      "cmp eax, dword ptr [ebx]",
+      "jl 0x527",
+      "jmp 0x7da",
+      "call find_free_zram",
+      "mov dword ptr [ebp - 0x40], eax",
+      "cmp dword ptr [ebp - 0x40], 0",
+      "jne 0x5fe",
+      "sub esp, 0xc",
+      "push 0x805a140",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push eax",
+      "push 1",
+      "call errx",
+      "mov eax, dword ptr [ebp - 0x40]",
+      "sub esp, 0xc",
+      "push eax",
+      "call puts",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x40]",
+      "call free_zram",
+      "add esp, 0x10",
+      "jmp 0x7da",
+      "cmp dword ptr [ebp - 0x48], 0",
+      "je 0x653",
+      "call find_free_zram",
+      "mov dword ptr [ebp - 0x40], eax",
+      "cmp dword ptr [ebp - 0x40], 0",
+      "jne 0x6be",
+      "sub esp, 0xc",
+      "push 0x805a140",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push eax",
+      "push 1",
+      "call errx",
+      "mov eax, dword ptr [0x80602ec]",
+      "cmp eax, dword ptr [ebx]",
+      "jne 0x677",
+      "sub esp, 0xc",
+      "push 0x805a112",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push eax",
+      "push 1",
+      "call errx",
+      "mov eax, dword ptr [0x80602ec]",
+      "lea edx, dword ptr [eax*4]",
+      "mov eax, dword ptr [ebp - 0x5c]",
+      "add eax, edx",
+      "mov eax, dword ptr [eax]",
+      "sub esp, 0xc",
+      "push eax",
+      "call new_zram",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x40], eax",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x40]",
+      "call zram_exist",
+      "add esp, 0x10",
+      "test eax, eax",
+      "jne 0x6be",
+      "mov eax, dword ptr [ebp - 0x40]",
+      "sub esp, 4",
+      "push eax",
+      "push 0x805a10f",
+      "push 1",
+      "call err",
+      "push 0",
+      "push 1",
+      "push 0x805a126",
+      "push dword ptr [ebp - 0x40]",
+      "call zram_set_u64parm",
+      "add esp, 0x10",
+      "test eax, eax",
+      "je 0x6f5",
+      "mov ebx, dword ptr [ebp - 0x40]",
+      "sub esp, 0xc",
+      "push 0x805a12c",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 4",
+      "push ebx",
+      "push eax",
+      "push 1",
+      "call err",
+      "mov eax, dword ptr [ebp - 0x2c]",
+      "or eax, dword ptr [ebp - 0x30]",
+      "test eax, eax",
+      "je 0x738",
+      "push dword ptr [ebp - 0x2c]",
+      "push dword ptr [ebp - 0x30]",
+      "push 0x8059ba4",
+      "push dword ptr [ebp - 0x40]",
+      "call zram_set_u64parm",
+      "add esp, 0x10",
+      "test eax, eax",
+      "je 0x738",
+      "mov ebx, dword ptr [ebp - 0x40]",
+      "sub esp, 0xc",
+      "push 0x805a15c",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 4",
+      "push ebx",
+      "push eax",
+      "push 1",
+      "call err",
+      "cmp dword ptr [ebp - 0x50], 0",
+      "je 0x777",
+      "sub esp, 4",
+      "push dword ptr [ebp - 0x50]",
+      "push 0x8059b81",
+      "push dword ptr [ebp - 0x40]",
+      "call zram_set_strparm",
+      "add esp, 0x10",
+      "test eax, eax",
+      "je 0x777",
+      "mov ebx, dword ptr [ebp - 0x40]",
+      "sub esp, 0xc",
+      "push 0x805a180",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 4",
+      "push ebx",
+      "push eax",
+      "push 1",
+      "call err",
+      "push dword ptr [ebp - 0x34]",
+      "push dword ptr [ebp - 0x38]",
+      "push 0x8059aad",
+      "push dword ptr [ebp - 0x40]",
+      "call zram_set_u64parm",
+      "add esp, 0x10",
+      "test eax, eax",
+      "je 0x7b6",
+      "mov ebx, dword ptr [ebp - 0x40]",
+      "sub esp, 0xc",
+      "push 0x805a19c",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x34]",
+      "push dword ptr [ebp - 0x38]",
+      "push ebx",
+      "push eax",
+      "push 1",
+      "call err",
+      "cmp dword ptr [ebp - 0x48], 0",
+      "je 0x7cb",
+      "mov eax, dword ptr [ebp - 0x40]",
+      "sub esp, 0xc",
+      "push eax",
+      "call puts",
+      "add esp, 0x10",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x40]",
+      "call free_zram",
+      "add esp, 0x10",
+      "nop",
+      "cmp dword ptr [ebp - 0x4c], 0",
+      "setne al",
+      "movzx eax, al",
+      "mov ecx, dword ptr [ebp - 0x1c]",
+      "xor ecx, dword ptr gs:[0x14]",
+      "je 0x7f5",
+      "call __stack_chk_fail",
+      "lea esp, dword ptr [ebp - 0xc]",
+      "pop ecx",
+      "pop ebx",
+      "pop esi",
+      "pop ebp",
+      "lea esp, dword ptr [ecx - 4]",
+      "ret"
+    ]
+  },
+  "zram_set_u64parm": {
+    "ret_type": "int",
+    "args_type": [
+      "struct zram*",
+      "char*",
+      "long long unsigned int"
+    ],
+    "inst_bytes": [
+      [
+        85
+      ],
+      [
+        137,
+        229
+      ],
+      [
+        131,
+        236,
+        40
+      ],
+      [
+        139,
+        69,
+        16
+      ],
+      [
+        137,
+        69,
+        224
+      ],
+      [
+        139,
+        69,
+        20
+      ],
+      [
+        137,
+        69,
+        228
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        232,
+        99,
+        254,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        69,
+        244
+      ],
+      [
+        131,
+        125,
+        244,
+        0
+      ],
+      [
+        117,
+        7
+      ],
+      [
+        184,
+        234,
+        255,
+        255,
+        255
+      ],
+      [
+        235,
+        20
+      ],
+      [
+        255,
+        117,
+        228
+      ],
+      [
+        255,
+        117,
+        224
+      ],
+      [
+        255,
+        117,
+        12
+      ],
+      [
+        255,
+        117,
+        244
+      ],
+      [
+        232,
+        160,
+        195,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        201
+      ],
+      [
+        195
+      ]
+    ],
+    "boundaries": [
+      134522709,
+      134522779
+    ],
+    "num_args": 3,
+    "inst_strings": [
+      "push ebp",
+      "mov ebp, esp",
+      "sub esp, 0x28",
+      "mov eax, dword ptr [ebp + 0x10]",
+      "mov dword ptr [ebp - 0x20], eax",
+      "mov eax, dword ptr [ebp + 0x14]",
+      "mov dword ptr [ebp - 0x1c], eax",
+      "sub esp, 0xc",
+      "push dword ptr [ebp + 8]",
+      "call zram_get_sysfs",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0xc], eax",
+      "cmp dword ptr [ebp - 0xc], 0",
+      "jne 0x30",
+      "mov eax, 0xffffffea",
+      "jmp 0x44",
+      "push dword ptr [ebp - 0x1c]",
+      "push dword ptr [ebp - 0x20]",
+      "push dword ptr [ebp + 0xc]",
+      "push dword ptr [ebp - 0xc]",
+      "call sysfs_write_u64",
+      "add esp, 0x10",
+      "leave",
+      "ret"
+    ]
+  },
+  "fill_table_row": {
+    "ret_type": "void",
+    "args_type": [
+      "struct libscols_table*",
+      "struct zram*"
+    ],
+    "inst_bytes": [
+      [
+        85
+      ],
+      [
+        137,
+        229
+      ],
+      [
+        87
+      ],
+      [
+        129,
+        236,
+        68,
+        16,
+        0,
+        0
+      ],
+      [
+        139,
+        69,
+        8
+      ],
+      [
+        137,
+        133,
+        196,
+        239,
+        255,
+        255
+      ],
+      [
+        139,
+        69,
+        12
+      ],
+      [
+        137,
+        133,
+        192,
+        239,
+        255,
+        255
+      ],
+      [
+        101,
+        161,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        137,
+        69,
+        244
+      ],
+      [
+        49,
+        192
+      ],
+      [
+        131,
+        189,
+        196,
+        239,
+        255,
+        255,
+        0
+      ],
+      [
+        117,
+        25
+      ],
+      [
+        104,
+        204,
+        162,
+        5,
+        8
+      ],
+      [
+        104,
+        138,
+        1,
+        0,
+        0
+      ],
+      [
+        104,
+        45,
+        154,
+        5,
+        8
+      ],
+      [
+        104,
+        90,
+        155,
+        5,
+        8
+      ],
+      [
+        232,
+        178,
+        241,
+        255,
+        255
+      ],
+      [
+        131,
+        189,
+        192,
+        239,
+        255,
+        255,
+        0
+      ],
+      [
+        117,
+        25
+      ],
+      [
+        104,
+        204,
+        162,
+        5,
+        8
+      ],
+      [
+        104,
+        139,
+        1,
+        0,
+        0
+      ],
+      [
+        104,
+        45,
+        154,
+        5,
+        8
+      ],
+      [
+        104,
+        138,
+        154,
+        5,
+        8
+      ],
+      [
+        232,
+        144,
+        241,
+        255,
+        255
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        181,
+        192,
+        239,
+        255,
+        255
+      ],
+      [
+        232,
+        39,
+        249,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        133,
+        224,
+        239,
+        255,
+        255
+      ],
+      [
+        131,
+        189,
+        224,
+        239,
+        255,
+        255,
+        0
+      ],
+      [
+        15,
+        132,
+        99,
+        3,
+        0,
+        0
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        106,
+        0
+      ],
+      [
+        255,
+        181,
+        196,
+        239,
+        255,
+        255
+      ],
+      [
+        232,
+        44,
+        237,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        163,
+        24,
+        3,
+        6,
+        8
+      ],
+      [
+        161,
+        24,
+        3,
+        6,
+        8
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        117,
+        27
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        96,
+        155,
+        5,
+        8
+      ],
+      [
+        232,
+        110,
+        237,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        232,
+        144,
+        235,
+        255,
+        255
+      ],
+      [
+        199,
+        133,
+        216,
+        239,
+        255,
+        255,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        233,
+        5,
+        3,
+        0,
+        0
+      ],
+      [
+        199,
+        133,
+        220,
+        239,
+        255,
+        255,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        139,
+        133,
+        216,
+        239,
+        255,
+        255
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        9,
+        246,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        248,
+        11
+      ],
+      [
+        15,
+        135,
+        179,
+        2,
+        0,
+        0
+      ],
+      [
+        139,
+        4,
+        133,
+        184,
+        155,
+        5,
+        8
+      ],
+      [
+        255,
+        224
+      ],
+      [
+        139,
+        133,
+        192,
+        239,
+        255,
+        255
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        180,
+        243,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        133,
+        220,
+        239,
+        255,
+        255
+      ],
+      [
+        233,
+        141,
+        2,
+        0,
+        0
+      ],
+      [
+        161,
+        20,
+        3,
+        6,
+        8
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        116,
+        33
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        104,
+        173,
+        154,
+        5,
+        8
+      ],
+      [
+        255,
+        181,
+        224,
+        239,
+        255,
+        255
+      ],
+      [
+        232,
+        201,
+        190,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        133,
+        220,
+        239,
+        255,
+        255
+      ],
+      [
+        233,
+        92,
+        2,
+        0,
+        0
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        141,
+        133,
+        232,
+        239,
+        255,
+        255
+      ],
+      [
+        80
+      ],
+      [
+        104,
+        173,
+        154,
+        5,
+        8
+      ],
+      [
+        255,
+        181,
+        224,
+        239,
+        255,
+        255
+      ],
+      [
+        232,
+        244,
+        187,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        15,
+        133,
+        55,
+        2,
+        0,
+        0
+      ],
+      [
+        139,
+        133,
+        232,
+        239,
+        255,
+        255
+      ],
+      [
+        139,
+        149,
+        236,
+        239,
+        255,
+        255
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        82
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        0
+      ],
+      [
+        232,
+        164,
+        52,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        133,
+        220,
+        239,
+        255,
+        255
+      ],
+      [
+        233,
+        17,
+        2,
+        0,
+        0
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        104,
+        129,
+        155,
+        5,
+        8
+      ],
+      [
+        255,
+        181,
+        224,
+        239,
+        255,
+        255
+      ],
+      [
+        232,
+        93,
+        190,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        133,
+        228,
+        239,
+        255,
+        255
+      ],
+      [
+        131,
+        189,
+        228,
+        239,
+        255,
+        255,
+        0
+      ],
+      [
+        15,
+        132,
+        235,
+        1,
+        0,
+        0
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        104,
+        144,
+        155,
+        5,
+        8
+      ],
+      [
+        255,
+        181,
+        228,
+        239,
+        255,
+        255
+      ],
+      [
+        232,
+        133,
+        232,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        117,
+        50
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        104,
+        150,
+        155,
+        5,
+        8
+      ],
+      [
+        255,
+        181,
+        228,
+        239,
+        255,
+        255
+      ],
+      [
+        232,
+        107,
+        232,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        133,
+        192
+      ],
+      [
+        116,
+        46
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        156,
+        155,
+        5,
+        8
+      ],
+      [
+        232,
+        199,
+        242,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        133,
+        220,
+        239,
+        255,
+        255
+      ],
+      [
+        235,
+        22
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        104,
+        160,
+        155,
+        5,
+        8
+      ],
+      [
+        232,
+        175,
+        242,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        133,
+        220,
+        239,
+        255,
+        255
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        181,
+        228,
+        239,
+        255,
+        255
+      ],
+      [
+        232,
+        248,
+        232,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        233,
+        119,
+        1,
+        0,
+        0
+      ],
+      [
+        141,
+        149,
+        244,
+        239,
+        255,
+        255
+      ],
+      [
+        184,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        185,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        137,
+        215
+      ],
+      [
+        243,
+        171
+      ],
+      [
+        139,
+        133,
+        192,
+        239,
+        255,
+        255
+      ],
+      [
+        104,
+        0,
+        16,
+        0,
+        0
+      ],
+      [
+        141,
+        149,
+        244,
+        239,
+        255,
+        255
+      ],
+      [
+        82
+      ],
+      [
+        141,
+        149,
+        212,
+        239,
+        255,
+        255
+      ],
+      [
+        82
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        99,
+        21,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        15,
+        182,
+        133,
+        244,
+        239,
+        255,
+        255
+      ],
+      [
+        132,
+        192
+      ],
+      [
+        15,
+        132,
+        49,
+        1,
+        0,
+        0
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        141,
+        133,
+        244,
+        239,
+        255,
+        255
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        60,
+        242,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        133,
+        220,
+        239,
+        255,
+        255
+      ],
+      [
+        144
+      ],
+      [
+        233,
+        19,
+        1,
+        0,
+        0
+      ],
+      [
+        131,
+        236,
+        8
+      ],
+      [
+        104,
+        164,
+        155,
+        5,
+        8
+      ],
+      [
+        255,
+        181,
+        224,
+        239,
+        255,
+        255
+      ],
+      [
+        232,
+        89,
+        189,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        133,
+        220,
+        239,
+        255,
+        255
+      ],
+      [
+        233,
+        243,
+        0,
+        0,
+        0
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        106,
+        5
+      ],
+      [
+        255,
+        181,
+        192,
+        239,
+        255,
+        255
+      ],
+      [
+        232,
+        42,
+        251,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        133,
+        220,
+        239,
+        255,
+        255
+      ],
+      [
+        233,
+        211,
+        0,
+        0,
+        0
+      ],
+      [
+        161,
+        20,
+        3,
+        6,
+        8
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        0
+      ],
+      [
+        255,
+        181,
+        192,
+        239,
+        255,
+        255
+      ],
+      [
+        232,
+        6,
+        251,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        133,
+        220,
+        239,
+        255,
+        255
+      ],
+      [
+        233,
+        175,
+        0,
+        0,
+        0
+      ],
+      [
+        161,
+        20,
+        3,
+        6,
+        8
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        1
+      ],
+      [
+        255,
+        181,
+        192,
+        239,
+        255,
+        255
+      ],
+      [
+        232,
+        226,
+        250,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        133,
+        220,
+        239,
+        255,
+        255
+      ],
+      [
+        233,
+        139,
+        0,
+        0,
+        0
+      ],
+      [
+        161,
+        20,
+        3,
+        6,
+        8
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        2
+      ],
+      [
+        255,
+        181,
+        192,
+        239,
+        255,
+        255
+      ],
+      [
+        232,
+        190,
+        250,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        133,
+        220,
+        239,
+        255,
+        255
+      ],
+      [
+        235,
+        106
+      ],
+      [
+        161,
+        20,
+        3,
+        6,
+        8
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        3
+      ],
+      [
+        255,
+        181,
+        192,
+        239,
+        255,
+        255
+      ],
+      [
+        232,
+        157,
+        250,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        133,
+        220,
+        239,
+        255,
+        255
+      ],
+      [
+        235,
+        73
+      ],
+      [
+        161,
+        20,
+        3,
+        6,
+        8
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        4
+      ],
+      [
+        255,
+        181,
+        192,
+        239,
+        255,
+        255
+      ],
+      [
+        232,
+        124,
+        250,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        133,
+        220,
+        239,
+        255,
+        255
+      ],
+      [
+        235,
+        40
+      ],
+      [
+        161,
+        20,
+        3,
+        6,
+        8
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        80
+      ],
+      [
+        106,
+        6
+      ],
+      [
+        255,
+        181,
+        192,
+        239,
+        255,
+        255
+      ],
+      [
+        232,
+        91,
+        250,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        133,
+        220,
+        239,
+        255,
+        255
+      ],
+      [
+        235,
+        7
+      ],
+      [
+        144
+      ],
+      [
+        235,
+        4
+      ],
+      [
+        144
+      ],
+      [
+        235,
+        1
+      ],
+      [
+        144
+      ],
+      [
+        131,
+        189,
+        220,
+        239,
+        255,
+        255,
+        0
+      ],
+      [
+        116,
+        29
+      ],
+      [
+        161,
+        24,
+        3,
+        6,
+        8
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        255,
+        181,
+        220,
+        239,
+        255,
+        255
+      ],
+      [
+        255,
+        181,
+        216,
+        239,
+        255,
+        255
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        182,
+        230,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        133,
+        216,
+        239,
+        255,
+        255,
+        1
+      ],
+      [
+        161,
+        8,
+        3,
+        6,
+        8
+      ],
+      [
+        57,
+        133,
+        216,
+        239,
+        255,
+        255
+      ],
+      [
+        15,
+        130,
+        234,
+        252,
+        255,
+        255
+      ],
+      [
+        235,
+        1
+      ],
+      [
+        144
+      ],
+      [
+        139,
+        69,
+        244
+      ],
+      [
+        101,
+        51,
+        5,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        116,
+        5
+      ],
+      [
+        232,
+        7,
+        232,
+        255,
+        255
+      ],
+      [
+        139,
+        125,
+        252
+      ],
+      [
+        201
+      ],
+      [
+        195
+      ]
+    ],
+    "boundaries": [
+      134523957,
+      134524990
+    ],
+    "num_args": 2,
+    "inst_strings": [
+      "push ebp",
+      "mov ebp, esp",
+      "push edi",
+      "sub esp, 0x1044",
+      "mov eax, dword ptr [ebp + 8]",
+      "mov dword ptr [ebp - 0x103c], eax",
+      "mov eax, dword ptr [ebp + 0xc]",
+      "mov dword ptr [ebp - 0x1040], eax",
+      "mov eax, dword ptr gs:[0x14]",
+      "mov dword ptr [ebp - 0xc], eax",
+      "xor eax, eax",
+      "cmp dword ptr [ebp - 0x103c], 0",
+      "jne 0x49",
+      "push 0x805a2cc",
+      "push 0x18a",
+      "push 0x8059a2d",
+      "push 0x8059b5a",
+      "call __assert_fail",
+      "cmp dword ptr [ebp - 0x1040], 0",
+      "jne 0x6b",
+      "push 0x805a2cc",
+      "push 0x18b",
+      "push 0x8059a2d",
+      "push 0x8059a8a",
+      "call __assert_fail",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x1040]",
+      "call zram_get_sysfs",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x1020], eax",
+      "cmp dword ptr [ebp - 0x1020], 0",
+      "je 0x3f2",
+      "sub esp, 8",
+      "push 0",
+      "push dword ptr [ebp - 0x103c]",
+      "call scols_table_new_line",
+      "add esp, 0x10",
+      "mov dword ptr [0x8060318], eax",
+      "mov eax, dword ptr [0x8060318]",
+      "test eax, eax",
+      "jne 0xcb",
+      "sub esp, 0xc",
+      "push 0x8059b60",
+      "call gettext",
+      "add esp, 0x10",
+      "sub esp, 8",
+      "push eax",
+      "push 1",
+      "call err",
+      "mov dword ptr [ebp - 0x1028], 0",
+      "jmp 0x3df",
+      "mov dword ptr [ebp - 0x1024], 0",
+      "mov eax, dword ptr [ebp - 0x1028]",
+      "sub esp, 0xc",
+      "push eax",
+      "call get_column_id",
+      "add esp, 0x10",
+      "cmp eax, 0xb",
+      "ja 0x3b2",
+      "mov eax, dword ptr [eax*4 + 0x8059bb8]",
+      "jmp eax",
+      "mov eax, dword ptr [ebp - 0x1040]",
+      "sub esp, 0xc",
+      "push eax",
+      "call xstrdup",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x1024], eax",
+      "jmp 0x3b2",
+      "mov eax, dword ptr [0x8060314]",
+      "test eax, eax",
+      "je 0x14f",
+      "sub esp, 8",
+      "push 0x8059aad",
+      "push dword ptr [ebp - 0x1020]",
+      "call sysfs_strdup",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x1024], eax",
+      "jmp 0x3ab",
+      "sub esp, 4",
+      "lea eax, dword ptr [ebp - 0x1018]",
+      "push eax",
+      "push 0x8059aad",
+      "push dword ptr [ebp - 0x1020]",
+      "call sysfs_read_u64",
+      "add esp, 0x10",
+      "test eax, eax",
+      "jne 0x3ab",
+      "mov eax, dword ptr [ebp - 0x1018]",
+      "mov edx, dword ptr [ebp - 0x1014]",
+      "sub esp, 4",
+      "push edx",
+      "push eax",
+      "push 0",
+      "call size_to_human_string",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x1024], eax",
+      "jmp 0x3ab",
+      "sub esp, 8",
+      "push 0x8059b81",
+      "push dword ptr [ebp - 0x1020]",
+      "call sysfs_strdup",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x101c], eax",
+      "cmp dword ptr [ebp - 0x101c], 0",
+      "je 0x3ae",
+      "sub esp, 8",
+      "push 0x8059b90",
+      "push dword ptr [ebp - 0x101c]",
+      "call strstr",
+      "add esp, 0x10",
+      "test eax, eax",
+      "jne 0x20f",
+      "sub esp, 8",
+      "push 0x8059b96",
+      "push dword ptr [ebp - 0x101c]",
+      "call strstr",
+      "add esp, 0x10",
+      "test eax, eax",
+      "je 0x225",
+      "sub esp, 0xc",
+      "push 0x8059b9c",
+      "call xstrdup",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x1024], eax",
+      "jmp 0x225",
+      "sub esp, 0xc",
+      "push 0x8059ba0",
+      "call xstrdup",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x1024], eax",
+      "sub esp, 0xc",
+      "push dword ptr [ebp - 0x101c]",
+      "call free",
+      "add esp, 0x10",
+      "jmp 0x3b2",
+      "lea edx, dword ptr [ebp - 0x100c]",
+      "mov eax, 0",
+      "mov ecx, 0x400",
+      "mov edi, edx",
+      "rep stosd dword ptr es:[edi], eax",
+      "mov eax, dword ptr [ebp - 0x1040]",
+      "push 0x1000",
+      "lea edx, dword ptr [ebp - 0x100c]",
+      "push edx",
+      "lea edx, dword ptr [ebp - 0x102c]",
+      "push edx",
+      "push eax",
+      "call check_mount_point",
+      "add esp, 0x10",
+      "movzx eax, byte ptr [ebp - 0x100c]",
+      "test al, al",
+      "je 0x3b1",
+      "sub esp, 0xc",
+      "lea eax, dword ptr [ebp - 0x100c]",
+      "push eax",
+      "call xstrdup",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x1024], eax",
+      "nop",
+      "jmp 0x3b1",
+      "sub esp, 8",
+      "push 0x8059ba4",
+      "push dword ptr [ebp - 0x1020]",
+      "call sysfs_strdup",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x1024], eax",
+      "jmp 0x3b2",
+      "sub esp, 4",
+      "push 1",
+      "push 5",
+      "push dword ptr [ebp - 0x1040]",
+      "call get_mm_stat",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x1024], eax",
+      "jmp 0x3b2",
+      "mov eax, dword ptr [0x8060314]",
+      "sub esp, 4",
+      "push eax",
+      "push 0",
+      "push dword ptr [ebp - 0x1040]",
+      "call get_mm_stat",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x1024], eax",
+      "jmp 0x3b2",
+      "mov eax, dword ptr [0x8060314]",
+      "sub esp, 4",
+      "push eax",
+      "push 1",
+      "push dword ptr [ebp - 0x1040]",
+      "call get_mm_stat",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x1024], eax",
+      "jmp 0x3b2",
+      "mov eax, dword ptr [0x8060314]",
+      "sub esp, 4",
+      "push eax",
+      "push 2",
+      "push dword ptr [ebp - 0x1040]",
+      "call get_mm_stat",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x1024], eax",
+      "jmp 0x3b2",
+      "mov eax, dword ptr [0x8060314]",
+      "sub esp, 4",
+      "push eax",
+      "push 3",
+      "push dword ptr [ebp - 0x1040]",
+      "call get_mm_stat",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x1024], eax",
+      "jmp 0x3b2",
+      "mov eax, dword ptr [0x8060314]",
+      "sub esp, 4",
+      "push eax",
+      "push 4",
+      "push dword ptr [ebp - 0x1040]",
+      "call get_mm_stat",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x1024], eax",
+      "jmp 0x3b2",
+      "mov eax, dword ptr [0x8060314]",
+      "sub esp, 4",
+      "push eax",
+      "push 6",
+      "push dword ptr [ebp - 0x1040]",
+      "call get_mm_stat",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0x1024], eax",
+      "jmp 0x3b2",
+      "nop",
+      "jmp 0x3b2",
+      "nop",
+      "jmp 0x3b2",
+      "nop",
+      "cmp dword ptr [ebp - 0x1024], 0",
+      "je 0x3d8",
+      "mov eax, dword ptr [0x8060318]",
+      "sub esp, 4",
+      "push dword ptr [ebp - 0x1024]",
+      "push dword ptr [ebp - 0x1028]",
+      "push eax",
+      "call scols_line_refer_data",
+      "add esp, 0x10",
+      "add dword ptr [ebp - 0x1028], 1",
+      "mov eax, dword ptr [0x8060308]",
+      "cmp dword ptr [ebp - 0x1028], eax",
+      "jb 0xda",
+      "jmp 0x3f3",
+      "nop",
+      "mov eax, dword ptr [ebp - 0xc]",
+      "xor eax, dword ptr gs:[0x14]",
+      "je 0x404",
+      "call __stack_chk_fail",
+      "mov edi, dword ptr [ebp - 4]",
+      "leave",
+      "ret"
+    ]
+  },
+  "zram_get_devnum": {
+    "ret_type": "int",
+    "args_type": [
+      "struct zram*"
+    ],
+    "inst_bytes": [
+      [
+        85
+      ],
+      [
+        137,
+        229
+      ],
+      [
+        131,
+        236,
+        40
+      ],
+      [
+        139,
+        69,
+        8
+      ],
+      [
+        137,
+        69,
+        228
+      ],
+      [
+        101,
+        161,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        137,
+        69,
+        244
+      ],
+      [
+        49,
+        192
+      ],
+      [
+        131,
+        125,
+        228,
+        0
+      ],
+      [
+        117,
+        25
+      ],
+      [
+        104,
+        148,
+        162,
+        5,
+        8
+      ],
+      [
+        104,
+        181,
+        0,
+        0,
+        0
+      ],
+      [
+        104,
+        45,
+        154,
+        5,
+        8
+      ],
+      [
+        104,
+        138,
+        154,
+        5,
+        8
+      ],
+      [
+        232,
+        10,
+        249,
+        255,
+        255
+      ],
+      [
+        139,
+        69,
+        228
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        141,
+        85,
+        240
+      ],
+      [
+        82
+      ],
+      [
+        104,
+        153,
+        154,
+        5,
+        8
+      ],
+      [
+        80
+      ],
+      [
+        232,
+        181,
+        247,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        131,
+        248,
+        1
+      ],
+      [
+        117,
+        5
+      ],
+      [
+        139,
+        69,
+        240
+      ],
+      [
+        235,
+        5
+      ],
+      [
+        184,
+        234,
+        255,
+        255,
+        255
+      ],
+      [
+        139,
+        77,
+        244
+      ],
+      [
+        101,
+        51,
+        13,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        116,
+        5
+      ],
+      [
+        232,
+        226,
+        242,
+        255,
+        255
+      ],
+      [
+        201
+      ],
+      [
+        195
+      ]
+    ],
+    "boundaries": [
+      134522096,
+      134522208
+    ],
+    "num_args": 1,
+    "inst_strings": [
+      "push ebp",
+      "mov ebp, esp",
+      "sub esp, 0x28",
+      "mov eax, dword ptr [ebp + 8]",
+      "mov dword ptr [ebp - 0x1c], eax",
+      "mov eax, dword ptr gs:[0x14]",
+      "mov dword ptr [ebp - 0xc], eax",
+      "xor eax, eax",
+      "cmp dword ptr [ebp - 0x1c], 0",
+      "jne 0x36",
+      "push 0x805a294",
+      "push 0xb5",
+      "push 0x8059a2d",
+      "push 0x8059a8a",
+      "call __assert_fail",
+      "mov eax, dword ptr [ebp - 0x1c]",
+      "sub esp, 4",
+      "lea edx, dword ptr [ebp - 0x10]",
+      "push edx",
+      "push 0x8059a99",
+      "push eax",
+      "call sscanf",
+      "add esp, 0x10",
+      "cmp eax, 1",
+      "jne 0x58",
+      "mov eax, dword ptr [ebp - 0x10]",
+      "jmp 0x5d",
+      "mov eax, 0xffffffea",
+      "mov ecx, dword ptr [ebp - 0xc]",
+      "xor ecx, dword ptr gs:[0x14]",
+      "je 0x6e",
+      "call __stack_chk_fail",
+      "leave",
+      "ret"
+    ]
+  },
+  "zram_set_strparm": {
+    "ret_type": "int",
+    "args_type": [
+      "struct zram*",
+      "char*",
+      "char*"
+    ],
+    "inst_bytes": [
+      [
+        85
+      ],
+      [
+        137,
+        229
+      ],
+      [
+        131,
+        236,
+        24
+      ],
+      [
+        131,
+        236,
+        12
+      ],
+      [
+        255,
+        117,
+        8
+      ],
+      [
+        232,
+        41,
+        254,
+        255,
+        255
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        137,
+        69,
+        244
+      ],
+      [
+        131,
+        125,
+        244,
+        0
+      ],
+      [
+        117,
+        7
+      ],
+      [
+        184,
+        234,
+        255,
+        255,
+        255
+      ],
+      [
+        235,
+        20
+      ],
+      [
+        131,
+        236,
+        4
+      ],
+      [
+        255,
+        117,
+        16
+      ],
+      [
+        255,
+        117,
+        12
+      ],
+      [
+        255,
+        117,
+        244
+      ],
+      [
+        232,
+        219,
+        194,
+        0,
+        0
+      ],
+      [
+        131,
+        196,
+        16
+      ],
+      [
+        201
+      ],
+      [
+        195
+      ]
+    ],
+    "boundaries": [
+      134522779,
+      134522837
+    ],
+    "num_args": 3,
+    "inst_strings": [
+      "push ebp",
+      "mov ebp, esp",
+      "sub esp, 0x18",
+      "sub esp, 0xc",
+      "push dword ptr [ebp + 8]",
+      "call zram_get_sysfs",
+      "add esp, 0x10",
+      "mov dword ptr [ebp - 0xc], eax",
+      "cmp dword ptr [ebp - 0xc], 0",
+      "jne 0x24",
+      "mov eax, 0xffffffea",
+      "jmp 0x38",
+      "sub esp, 4",
+      "push dword ptr [ebp + 0x10]",
+      "push dword ptr [ebp + 0xc]",
+      "push dword ptr [ebp - 0xc]",
+      "call sysfs_write_string",
+      "add esp, 0x10",
+      "leave",
+      "ret"
+    ]
+  }
+}
