@@ -161,7 +161,6 @@ def get_type(die, diedict):
                                diedict, typedict)
 
         else:
-            subtype = None
             try:
                 subtype = die.attributes['DW_AT_type'].value
             except:
@@ -329,7 +328,7 @@ def test_details():
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:
-        if sys.argv[1] == '--test':
+        if sys.argv[1] == '--debug':
             for filename in sys.argv[2:]:
                 print_debug(filename)
         elif sys.argv[1] == '--objdump':
