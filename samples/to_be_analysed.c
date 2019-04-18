@@ -1,3 +1,5 @@
+#include <sample-header.h>
+
 struct MyStruct {
   int a;
   int b;
@@ -38,10 +40,14 @@ void voidFunction(int a, char b) {
   a = a + 1;
 }
 
+inline int myInlineFunction(int a, int b) { return a + b; }
+int myInlineFunction(int a, int b);
 
 int main(int argc, char const* argv[]) {
   int a = 1;
   sum(a, a);
   voidFunction(1, 'c');
+  int myInt = myInlineFunction(13, a);
+  mySampleFunctionDefinedInHeader(1, '1');
   return 0;
 }

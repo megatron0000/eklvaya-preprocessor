@@ -49,6 +49,8 @@ def get_all_subprograms_eklavya_format(file_name):
         for die in compile_unit.iter_DIEs():
             if (die.tag == 'DW_TAG_subprogram'):
                 subprogram = get_subprogram(die, diedict, disassemble)
+                if subprogram is None:
+                    continue
                 result[subprogram['name']] = {
                     'ret_type': subprogram['ret_type'],
                     'args_type': subprogram['args_type'],
@@ -126,8 +128,16 @@ def get_type(die, diedict):
 
         elif die.tag == 'DW_TAG_pointer_type':
             typedict['pointer_level'] += 1
-            get_type_recursive(diedict[die.cu.cu_offset][die.attributes['DW_AT_type'].value],
-                               diedict, typedict)
+            try:
+                subtype = die.attributes['DW_AT_type'].value
+            except:
+                subtype = None
+            if subtype is not None:
+                get_type_recursive(diedict[die.cu.cu_offset][subtype],
+                                   diedict, typedict)
+            else:
+                # We have a void* in our hands =)
+                typedict['base_name'] = 'void'
 
         elif die.tag == 'DW_TAG_typedef':
             get_type_recursive(diedict[die.cu.cu_offset][die.attributes['DW_AT_type'].value],
@@ -146,8 +156,11 @@ def get_type(die, diedict):
                 die.attributes['DW_AT_name'].value
 
         elif die.tag == 'DW_TAG_enumeration_type':
-            typedict['base_name'] = 'enum ' + \
-                die.attributes['DW_AT_name'].value
+            try:
+                enum_name = die.attributes['DW_AT_name'].value
+            except:
+                enum_name = '<unknown>'
+            typedict['base_name'] = 'enum ' + enum_name
 
         elif die.tag == 'DW_TAG_subroutine_type':
             typedict['func_ptr'] = True
@@ -182,39 +195,67 @@ def get_type(die, diedict):
 
 def get_subprogram(die, diedict, disassemble):
     """
-    'diedict' is a mapping obtained with 'get_offset2DIE'
+    'diedict' is a mapping obtained with 'get_offset2DIE'.
+
+    Returns a subprogram dict, or None if the subprogram is external (meaning
+    its code is not present, hence we cannot know much about it)
     """
+
+    if 'DW_AT_abstract_origin' not in die.attributes and 'DW_AT_low_pc' not in die.attributes:
+        # print(die)
+        return None
+
+    def get_boundaries(subroutine_die):
+        lowpc = subroutine_die.attributes['DW_AT_low_pc'].value
+        # high_pc may either be relative or absolute
+        if subroutine_die.attributes['DW_AT_high_pc'].form[:12] == 'DW_FORM_data':
+            highpc = lowpc + \
+                subroutine_die.attributes['DW_AT_high_pc'].value - 1
+        else:
+            highpc = subroutine_die.attributes['DW_AT_high_pc'].value - 1
+        subroutine['boundaries'] = (lowpc, highpc)
+
+        subroutine['inst_strings'] = []
+        subroutine['inst_bytes'] = []
+        # TODO: this is too inefficient
+        for inst in disassemble:
+            if inst.address >= lowpc and inst.address <= highpc:
+                subroutine['inst_strings'].append(
+                    inst.mnemonic + ' ' + inst.op_str)
+                subroutine['inst_bytes'].append(inst.bytes)
+
+    def get_arguments(subroutine_die):
+        for parameter_die in subroutine_die.iter_children():
+            if parameter_die.tag == 'DW_TAG_formal_parameter':
+                subroutine['num_args'] += 1
+                subroutine['args_type'].append(
+                    get_type(parameter_die, diedict))
+
     subroutine = {}
-    subroutine['name'] = die.attributes['DW_AT_name'].value
-    try:
-        subroutine['ret_type'] = get_type(
-            diedict[die.cu.cu_offset][die.attributes['DW_AT_type'].value], diedict)
-    except:
-        subroutine['ret_type'] = 'void'
     subroutine['num_args'] = 0
     subroutine['args_type'] = []
 
-    lowpc = die.attributes['DW_AT_low_pc'].value
-    # high_pc may either be relative or absolute
-    if die.attributes['DW_AT_high_pc'].form[:12] == 'DW_FORM_data':
-        highpc = lowpc + die.attributes['DW_AT_high_pc'].value - 1
+    if 'DW_AT_abstract_origin' in die.attributes:
+        origin = diedict[die.cu.cu_offset][die.attributes['DW_AT_abstract_origin'].value]
+        if 'DW_AT_inline' in origin.attributes and origin.attributes['DW_AT_inline'].value == 1:
+            return None
+        subroutine['name'] = origin.attributes['DW_AT_name'].value
+        try:
+            subroutine['ret_type'] = get_type(
+                diedict[origin.cu.cu_offset][origin.attributes['DW_AT_type'].value], diedict)
+        except:
+            subroutine['ret_type'] = 'void'
+        get_boundaries(die)
+        get_arguments(origin)
     else:
-        highpc = die.attributes['DW_AT_high_pc'].value - 1
-    subroutine['boundaries'] = (lowpc, highpc)
-
-    for parameter_die in die.iter_children():
-        if parameter_die.tag == 'DW_TAG_formal_parameter':
-            subroutine['num_args'] += 1
-            subroutine['args_type'].append(get_type(parameter_die, diedict))
-
-    subroutine['inst_strings'] = []
-    subroutine['inst_bytes'] = []
-    # TODO: this is too inefficient
-    for inst in disassemble:
-        if inst.address >= lowpc and inst.address <= highpc:
-            subroutine['inst_strings'].append(
-                inst.mnemonic + ' ' + inst.op_str)
-            subroutine['inst_bytes'].append(inst.bytes)
+        subroutine['name'] = die.attributes['DW_AT_name'].value
+        try:
+            subroutine['ret_type'] = get_type(
+                diedict[die.cu.cu_offset][die.attributes['DW_AT_type'].value], diedict)
+        except:
+            subroutine['ret_type'] = 'void'
+        get_boundaries(die)
+        get_arguments(die)
 
     return subroutine
 
@@ -223,7 +264,7 @@ def get_function_calls_eklavya_format(file_name):
     """
     Returns a dict function_name -> callers
 
-    in which 'callers' is an array of dicts with the form 
+    in which 'callers' is an array of dicts with the form
     {
         "caller": string,
         "call_isntr_indices": array of integers
@@ -273,10 +314,6 @@ def get_function_calls_eklavya_format(file_name):
                 })
             # Find instruction index
             raw_inst_bytes = subprograms[caller['name']]['inst_bytes']
-            print(caller['name'])
-            print(subprograms[caller['name']])
-            print(call_location)
-            print('')
             curr_address = caller['boundaries'][0]
             index = 0
             while curr_address != call_location['call_address']:
