@@ -11,7 +11,10 @@ from capstone import *
 import subprocess
 import re
 
-sys.path[0:0] = ['.', '..']
+import pickle
+import os
+import os.path as path
+import traceback
 
 
 def get_ELFFile(file_name):
@@ -152,8 +155,12 @@ def get_type(die, diedict):
             typedict['base_name'] = 'struct ' + struct_name
 
         elif die.tag == 'DW_TAG_union_type':
-            typedict['base_name'] = 'union ' + \
-                die.attributes['DW_AT_name'].value
+            union_name = '<unknown>'
+            try:
+                union_name = die.attributes['DW_AT_name'].value
+            except:
+                union_name = '<unknown>'
+            typedict['base_name'] = 'union ' + union_name
 
         elif die.tag == 'DW_TAG_enumeration_type':
             try:
@@ -377,5 +384,43 @@ if __name__ == '__main__':
         elif sys.argv[1] == '--allsubprograms':
             for filename in sys.argv[2:]:
                 print(get_all_subprograms_eklavya_format(filename))
+        elif sys.argv[1] == '--compare-eklavya':
+            if len(sys.argv) < 2:
+                print(
+                    'usage: python main.py --compare-eklavya /path/to/x64-pickles-dir-or-file')
+            pickle_path = sys.argv[2]
+            if path.isdir(pickle_path):
+                pickle_list = [path.join(pickle_path, pickle_file)
+                               for pickle_file in os.listdir(pickle_path)]
+            else:
+                pickle_list = [pickle_path]
+            for pickle_file in pickle_list:
+                file = open(pickle_file)
+                eklavya_version = pickle.load(file)
+                tmp_binary_path = '/tmp/tmp-binary-for-eklavya-conversion-test'
+                tmp_binary = open(tmp_binary_path, 'wb')
+                tmp_binary.write(eklavya_version['bin_raw_bytes'])
+                tmp_binary.close()
+                print('Processing ' + pickle_file + ':')
+                try:
+                    our_version = get_all_subprograms_eklavya_format(
+                        tmp_binary_path)
+                except Exception as err:
+                    print('')
+                    print('error when processing ' + pickle_file + ':')
+                    print(err)
+                    traceback.print_exc()
+                    print('')
+                    continue
+                our_excess = [
+                    func for func in our_version if func not in eklavya_version['functions']]
+                print('Our excess count is ' +
+                      str(len(our_excess)) + '. They are: ')
+                print(sorted(our_excess))
+                eklavya_excess = [
+                    func for func in eklavya_version['functions'] if func not in our_version]
+                print('Eklavya excess count is ' +
+                      str(len(eklavya_excess)) + '. They are:')
+                print(sorted(eklavya_excess))
     else:
         test_details()
