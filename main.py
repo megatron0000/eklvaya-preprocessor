@@ -304,6 +304,9 @@ def get_function_calls_eklavya_format(file_name):
         tmp_call_locations.append(call)
     call_locations = tmp_call_locations
 
+    if len(call_locations) == 0:
+        return result
+
     call_location_index = 0
     for caller in subprogram_ranges:
         appended = {}
@@ -423,4 +426,36 @@ if __name__ == '__main__':
                       str(len(eklavya_excess)) + '. They are:')
                 print(sorted(eklavya_excess))
     else:
-        test_details()
+        tmp_path = '/tmp/eklavya-format-conversion-O2'
+        if path.exists(tmp_path):
+            subprocess.call(['rm', '-r', tmp_path])
+        os.mkdir(tmp_path)
+        result = []
+        # test_details()
+        o_files = [filename for filename in subprocess.check_output(
+            ['find', '../cpython', '-name', '*.o']).split('\n') if filename != '']
+        print('About to process ' + str(len(o_files)) + ' files')
+        for filename in o_files:
+            file_merged_text_sections = path.join(
+                tmp_path, path.basename(filename))
+            subprocess.call(['ld', '-r', '-o', file_merged_text_sections,
+                             filename, '-T', './default_linter_script'])
+        for filename in o_files:
+            file_merged_text_sections = path.join(
+                tmp_path, path.basename(filename))
+            print('Processing ' + filename)
+            bin_info = {
+                'functions': get_all_subprograms_eklavya_format(file_merged_text_sections),
+                'structures': None,
+                'text_addr': None,
+                'binRawBytes': None,
+                'arch': 'x64',
+                'binary_filename': filename,
+                'function_calls': get_function_calls_eklavya_format(file_merged_text_sections)
+            }
+            result.append(bin_info)
+            print(bin_info['functions'].keys())
+        output_path = path.join(tmp_path, 'cpython-eklavya-format-dataset.pkl')
+        output_file = open(output_path, 'w')
+        pickle.dump(result, output_file)
+        output_file.close()
