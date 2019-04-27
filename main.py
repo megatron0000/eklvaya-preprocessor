@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-.
 
 from __future__ import print_function
-from capstone.x86 import *
 from elftools.elf.elffile import ELFFile
 import sys
-from xprint import *
+from xprint import to_x
 
-from capstone import *
+from capstone.x86 import X86_OP_IMM
+from capstone import CS_ARCH_X86, CS_MODE_64, Cs
 
 import subprocess
 import re
@@ -15,6 +15,8 @@ import pickle
 import os
 import os.path as path
 import traceback
+
+import random
 
 
 def get_ELFFile(file_name):
@@ -388,7 +390,7 @@ if __name__ == '__main__':
             for filename in sys.argv[2:]:
                 print(get_all_subprograms_eklavya_format(filename))
         elif sys.argv[1] == '--compare-eklavya':
-            if len(sys.argv) < 2:
+            if len(sys.argv) < 3:
                 print(
                     'usage: python main.py --compare-eklavya /path/to/x64-pickles-dir-or-file')
             pickle_path = sys.argv[2]
@@ -425,6 +427,40 @@ if __name__ == '__main__':
                 print('Eklavya excess count is ' +
                       str(len(eklavya_excess)) + '. They are:')
                 print(sorted(eklavya_excess))
+        elif sys.argv[1] == '--gen-split-func':
+            if len(sys.argv) < 4:
+                print(
+                    'usage: python main.py --gen-split-func /path/to/x86-or-x64-pickles-dir /path/where/put/output.pkl')
+            pickle_path = sys.argv[2]
+            output_path = sys.argv[3]
+            output_file = open(output_path, 'wb')
+            # According to eklavya paper, will be 80% train and 20% test
+            output_obj = {
+                'train': [],
+                'test': []
+            }
+            pickle_list = [path.join(pickle_path, pickle_file)
+                           for pickle_file in os.listdir(pickle_path)]
+            for pickle_file in pickle_list:
+                eklavya_obj = pickle.load(open(pickle_file))
+                for callee_name in eklavya_obj['function_calls']:
+                    callers = eklavya_obj['function_calls'][callee_name]
+                    for caller_obj in callers:
+                        caller_name = caller_obj['caller']
+                        caller_indices = caller_obj['call_instr_indices']
+                        if caller_name not in eklavya_obj['functions']:
+                            continue
+                        for caller_index in caller_indices:
+                            call_hash = '#'.join(
+                                [path.basename(pickle_file), callee_name, caller_name, str(caller_index)])
+                            if random.randint(1, 100) <= 80:
+                                output_obj['train'].append(call_hash)
+                            else:
+                                output_obj['test'].append(call_hash)
+
+            pickle.dump(output_obj, output_file)
+            output_file.close()
+
     else:
         tmp_path = '/tmp/eklavya-format-conversion-O2'
         if path.exists(tmp_path):
