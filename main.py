@@ -38,7 +38,8 @@ def print_debug(file_name):
     print('init subprogram finding')
     for compile_unit in dwarfinfo.iter_CUs():
         for die in compile_unit.iter_DIEs():
-            # print('At offset ' + str(die.offset) + ':')
+            print('At offset ' + str(die.offset) + ':')
+            print(die)
             if (die.tag == 'DW_TAG_subprogram'):
                 # print(dir(die.dwarfinfo))
                 print(get_subprogram(die, diedict, disassemble))
@@ -475,7 +476,7 @@ if __name__ == '__main__':
             file_merged_text_sections = path.join(
                 tmp_path, path.basename(filename))
             subprocess.call(['ld', '-r', '-o', file_merged_text_sections,
-                             filename, '-T', './default_linter_script'])
+                             filename, '-T', './default_linker_script'])
         for filename in o_files:
             file_merged_text_sections = path.join(
                 tmp_path, path.basename(filename))

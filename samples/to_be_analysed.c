@@ -22,6 +22,10 @@ MyStructAlias a;
 
 typedef int (*compare_function)(int a, int b);
 
+int mySampleFunctionDefinedInHeader(int xx1, char xx2) {
+  return 0;
+}
+
 void MyFunction(MyStructAlias* aaa, int myArray[], MyUnion uni,
                 unsigned int myUnsInt, enum MyEnum enum11,
                 compare_function comp) {
