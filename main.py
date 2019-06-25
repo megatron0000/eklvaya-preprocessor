@@ -394,6 +394,7 @@ if __name__ == '__main__':
             if len(sys.argv) < 3:
                 print(
                     'usage: python main.py --compare-eklavya /path/to/x64-pickles-dir-or-file')
+                sys.exit(1)
             pickle_path = sys.argv[2]
             if path.isdir(pickle_path):
                 pickle_list = [path.join(pickle_path, pickle_file)
@@ -428,10 +429,13 @@ if __name__ == '__main__':
                 print('Eklavya excess count is ' +
                       str(len(eklavya_excess)) + '. They are:')
                 print(sorted(eklavya_excess))
+        # eklavya version is not safe, but ours is:
+        # concretely, this means we skip calls if the caller is not in our list of function bodies
         elif sys.argv[1] == '--gen-split-func':
             if len(sys.argv) < 4:
                 print(
                     'usage: python main.py --gen-split-func /path/to/x86-or-x64-pickles-dir /path/where/put/output.pkl')
+                sys.exit(1)
             pickle_path = sys.argv[2]
             output_path = sys.argv[3]
             output_file = open(output_path, 'wb')
@@ -461,7 +465,45 @@ if __name__ == '__main__':
 
             pickle.dump(output_obj, output_file)
             output_file.close()
-
+        elif sys.argv[1] == '--clean-pickles':
+            if len(sys.argv) < 4:
+                print(
+                    'usage: python main.py --clean-pickles /path/to/x86-or-x64-pickles-dir /dirpath/where/put/clean_pickles/'
+                )
+                sys.exit(1)
+            unclean_pickles_dir = sys.argv[2]
+            output_dir = sys.argv[3]
+            picklepath_list = [path.join(unclean_pickles_dir, pickle_file)
+                               for pickle_file in os.listdir(unclean_pickles_dir)]
+            pickleobj_list = [pickle.load(open(picklepath))
+                              for picklepath in picklepath_list]
+            function_name_cache = {}
+            clean_pickleobj_list = []
+            names = {}
+            for pickleobj in pickleobj_list:
+                duplicate = []
+                for function_name in pickleobj['functions'].keys():
+                    # duplicate !
+                    if function_name_cache.has_key(function_name):
+                        duplicate.append(function_name)
+                        pickleobj['functions'].pop(function_name)
+                        function_name_cache[function_name] += 1
+                    else:
+                        function_name_cache[function_name] = 1
+                basename = os.path.basename(pickleobj['binary_filename'])
+                if basename in names:
+                    names[basename] += 1
+                    basename = basename + '(' + str(names[basename]) + ')'
+                else:
+                    names[basename] = 0
+                outpath = os.path.join(output_dir, basename)
+                out = open(outpath, 'w')
+                pickle.dump(pickleobj, out)
+                out.close()
+            print('Report: How many times each function name appears in all binaries taken together')
+            for key in function_name_cache:
+                print(key + ': ' + str(function_name_cache[key]))
+    # processing of cpython. paths hardcoded
     else:
         tmp_path = '/tmp/eklavya-format-conversion-O2'
         if path.exists(tmp_path):

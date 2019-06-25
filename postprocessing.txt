@@ -1,0 +1,22 @@
+# postprocessing for cpython. paths hardcoded
+
+import pickle
+import os
+a = open('cpython-eklavya-format-dataset.pkl')
+b = pickle.load(a)
+names = {}
+for i in b:
+    basename = os.path.basename(i['binary_filename'])
+    if basename in names:
+            names[basename] += 1
+            basename = basename + '(' + str(names[basename]) + ')'
+    names[basename] = 0
+    outpath = '/tmp/gcc-x64-O2-cpython/' + basename
+    out = open(outpath, 'w')
+    pickle.dump(i, out)
+    out.close()
+
+
+for file in *.o; do   mv "$file" "${file%.o}.pkl"; done
+for file in *.pkl; do   mv "$file" "${file%.pkl}-O2.pkl"; done
+for file in *-O3.pkl; do   mv "$file" "${file%-O3.pkl}.pkl"; done
